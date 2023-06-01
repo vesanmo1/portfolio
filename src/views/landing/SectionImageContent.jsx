@@ -1,12 +1,31 @@
-import "./landing.scss";
+import { useState } from "react";
 
 export const SectionImageContent = (props) => {
-  const { title, description, buttonText } = props;
+  const [contentToShow, setContentToShow] = useState("hardSkills");
   return (
     <>
-      <h3 className="section-img-content__title">{title}</h3>
-      <p className="section-img-content__description">{description}</p>
-      <button className="section-img-content__button">{buttonText}</button>
+      <div>
+        <button
+          onClick={() => setContentToShow("hardSkills")}
+          className={contentToShow === "hardSkills" ? "red" : ""}
+        >
+          Hard skills
+        </button>
+        <button
+          onClick={() => setContentToShow("softSkills")}
+          className={contentToShow === "softSkills" ? "red" : ""}
+        >
+          Soft skills
+        </button>
+        <button className={contentToShow === "education" ? "red" : ""}>
+          Education
+        </button>
+      </div>
+      {contentToShow === "hardSkills" && <div>Estas son mis hard skills</div>}
+      {contentToShow === "softSkills" && <div>Estas son mis soft skills</div>}
+      {contentToShow === "education" && (
+        <div>Estas son mis education skills</div>
+      )}
     </>
   );
 };
