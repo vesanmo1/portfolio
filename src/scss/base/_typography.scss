@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+body {
+  font-family: "Tajawal", "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// HEADINGS ====================================================
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: "Muller Narrow", "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  font-weight: bold;
+}
+
+.special-title {
+  font-size: 96px;
+  line-height: 96px;
+  padding-bottom: 50px;
+}
+
+.special-description {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h3,
+.h3 {
+  font-weight: lighter;
+  font-size: 38px;
+}

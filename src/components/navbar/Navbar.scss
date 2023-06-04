@@ -1,0 +1,90 @@
+.navbar {
+  height: 75px;
+  padding: 0 250px;
+  background-color: var(--color-violet);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .navbar__sections-links,
+  .navbar__rrss-links {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    & a {
+      color: var(--color-black);
+      text-decoration: none;
+    }
+  }
+}
+
+.burguerButton {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar__sections-links,
+  .navbar__rrss-links {
+    z-index: 4;
+    position: absolute;
+    top: -700px;
+    right: 0;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin: 0;
+    a {
+      font-size: 1rem;
+      color: white;
+      display: block;
+    }
+
+    &.active {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: absolute;
+      &.on-top {
+        top: 20%;
+      }
+      &.on-bottom {
+        top: 85%;
+        flex-direction: row;
+        justify-content: center;
+      }
+      text-align: center;
+      a {
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: white;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .burguerButton {
+    z-index: 3;
+    display: block;
+  }
+
+  .initial {
+    background-color: var(--color-black);
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.6s ease;
+
+    &.active {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}
