@@ -3,7 +3,7 @@ import "./Logo.scss";
 function Logo() {
   return (
     <svg
-      className="dimensions"
+      className="dimensions-logo"
       id="Logo"
       data-name="Logo"
       xmlns="http://www.w3.org/2000/svg"

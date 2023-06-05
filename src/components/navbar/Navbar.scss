@@ -1,7 +1,7 @@
 .navbar {
   height: 75px;
   padding: 0 250px;
-  background-color: var(--color-violet);
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,13 +14,17 @@
     align-items: center;
     gap: 3rem;
     & a {
-      color: var(--color-black);
+      color: var(--color-dark-100);
       text-decoration: none;
     }
   }
 }
 
 .burguerButton {
+  display: none;
+}
+
+.initial {
   display: none;
 }
 
@@ -71,7 +75,8 @@
   }
 
   .initial {
-    background-color: var(--color-black);
+    display: block;
+    background-color: var(--color-dark-100);
     position: absolute;
     top: -1000px;
     right: 0;

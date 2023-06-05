@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BurguerButton from "../buttons/Burguer-button";
+import BurguerButton from "../icons/Burguer-menu";
 import Logo from "../icons/Logo";
 import "./Navbar.scss";
 

@@ -1,0 +1,41 @@
+// HEADER ====================================================
+
+.header {
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+}
+
+// PROJECTS CARDS ====================================================
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.card {
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-dark-100);
+  border-radius: 24px;
+}
+
+// ACCORDION ====================================================
+
+.accordion {
+  border-bottom: 2px solid var(--color-dark-100);
+  margin-bottom: 30px;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  &::before {
+    height: 0 !important;
+  }
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  padding: 0 !important;
+}

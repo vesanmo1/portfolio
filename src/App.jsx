@@ -1,8 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Header from "./components/header/Header-hello";
 import "./scss/global.scss";
 import { useState } from "react";
+import Landing from "./components/landing/Landing";
 
 function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Landing />
 
       <footer className="read-the-docs">My footer </footer>
     </>

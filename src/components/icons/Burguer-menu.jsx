@@ -1,4 +1,4 @@
-import "./Burguer-button.scss";
+import "./Burguer-menu.scss";
 
 function BurguerButton(props) {
   return (
