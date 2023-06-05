@@ -13,16 +13,27 @@ body {
 h1,
 h2,
 h3,
+h5,
 .h1,
 .h2,
-.h3 {
+.h3,
+.h5 {
   font-family: "Muller Narrow", "Open Sans", sans-serif;
+}
+
+h4,
+.h4 {
+  font-family: "Tajawal", "Open Sans", sans-serif;
 }
 
 h1,
 h2,
+h4,
+h5,
 .h1,
-.h2 {
+.h2,
+.h4,
+.h5 {
   font-weight: bold;
 }
 
@@ -37,8 +48,37 @@ h2,
   line-height: 50px;
 }
 
+h2,
+.h2 {
+  font-size: 64px;
+}
+
 h3,
 .h3 {
   font-weight: lighter;
   font-size: 38px;
+}
+
+h4,
+.h4 {
+  font-size: 38px;
+}
+
+h5,
+.h5 {
+  font-size: 32px;
+}
+
+.only-line {
+  color: transparent;
+  -webkit-text-stroke: 0.15rem var(--color-dark-100);
+}
+
+.filled-text {
+  color: var(--color-dark-100);
+  -webkit-text-stroke: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
