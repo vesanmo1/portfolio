@@ -92,6 +92,9 @@ a,
   font-weight: bold;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.hover-invert-color {
   &:hover,
   &:focus {
     background-color: var(--color-dark-100);

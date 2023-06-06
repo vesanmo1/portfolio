@@ -21,13 +21,21 @@ function Landing() {
               <div className="paragraph-spacing">
                 <p className="special-description">
                   Te invito a descubrir los{" "}
-                  <a href="#my-projects">últimos trabajos</a> que he realizado,
-                  o quizás prefieras conocer <a href="#my-projects">qué hago</a>{" "}
+                  <a className="hover-invert-color" href="#my-projects">
+                    últimos trabajos
+                  </a>{" "}
+                  que he realizado, o quizás prefieras conocer{" "}
+                  <a className="hover-invert-color" href="#my-projects">
+                    qué hago
+                  </a>{" "}
                   y cómo puedo aportar a tu proyecto. <br />
                 </p>
                 <p className="special-description">
-                  No dudes en <a href="#my-projects">contactar</a> conmigo,
-                  ¡estaré encantada de responderte!
+                  No dudes en{" "}
+                  <a className="hover-invert-color" href="#my-projects">
+                    contactar
+                  </a>{" "}
+                  conmigo, ¡estaré encantada de responderte!
                 </p>
               </div>
             </div>
@@ -109,7 +117,7 @@ function Landing() {
           Descubre mi trayectoria y obtén una visión más completa de quién soy.
         </p>
         <div className="split-content padding-top-subsections">
-          <div className="content equal claim-container">
+          <div className="content claim-container">
             <div className="claim">
               <p className="h5">
                 Trabajo de forma flexible y me adapto a los descubrimientos que
@@ -117,12 +125,21 @@ function Landing() {
               </p>
             </div>
           </div>
-          <div className="content equal">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              eros enim, aliquet sit amet nisl vel, vulputate feugiat ligula.
-              Fusce id posuere nisi, vitae venenatis metus. Nunc et erat
-              ullamcorper, tristique nibh eu, commodo odio.
+          <div className="content paragraph-spacing">
+            <p className="h6">
+              Si has llegado hasta aquí, antes que nada, gracias por tu interés.
+              Permíteme presentarme nuevamente: me llamo Verónica Sánchez, he
+              estudiado el Grado en Ingeniería en Diseño Industrial y Desarrollo
+              de Productos y acabo de terminar el Postgrado de Diseño y
+              Desarrollo Web front-end.
+            </p>
+            <p className="h6">
+              Antes de comenzar el postgrado, estuve trabajando en una start-up
+              de cosmética en la que hice el diseño de la identidad visual, el
+              diseño del packaging y el de la web. En esta experiencia laboral
+              pude aprender mucho en poco tiempo y me permitió mejorar
+              enormemente en mi capacidad para resolver problemas y para
+              gestionar mi tiempo, entre otras.
             </p>
           </div>
         </div>
