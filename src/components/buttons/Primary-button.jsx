@@ -1,6 +1,17 @@
 import "./Primary-button.scss";
+import LargeArrow from "../icons/Large-arrow";
 
-function PrimaryButton() {
-  return <button class="btn-primary">Enviar</button>;
+function PrimaryButton(props) {
+  return (
+    <button
+      onClick={() => {
+        if (props?.onClick) props?.onClick();
+      }}
+      className="btn-primary p"
+    >
+      Ver más
+      <LargeArrow />
+    </button>
+  );
 }
 export default PrimaryButton;

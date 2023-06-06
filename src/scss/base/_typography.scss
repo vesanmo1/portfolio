@@ -22,7 +22,9 @@ h5,
 }
 
 h4,
-.h4 {
+h6,
+.h4,
+.h6 {
   font-family: "Tajawal", "Open Sans", sans-serif;
 }
 
@@ -37,15 +39,11 @@ h5,
   font-weight: bold;
 }
 
-.special-title {
-  font-size: 96px;
-  line-height: 96px;
-  padding-bottom: 50px;
-}
-
-.special-description {
-  font-size: 40px;
-  line-height: 50px;
+h3,
+h6,
+.h3,
+.h6 {
+  font-weight: lighter;
 }
 
 h2,
@@ -55,7 +53,6 @@ h2,
 
 h3,
 .h3 {
-  font-weight: lighter;
   font-size: 38px;
 }
 
@@ -69,9 +66,43 @@ h5,
   font-size: 32px;
 }
 
+h6,
+.h6 {
+  font-size: 24px;
+}
+
+p,
+.p {
+  font-size: 18px;
+}
+
+.special-title {
+  font-size: 84px;
+  line-height: 84px;
+  padding-bottom: 50px;
+}
+
+.special-description {
+  font-size: 36px;
+}
+
+a,
+.a {
+  all: unset;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    background-color: var(--color-dark-100);
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+  }
+}
+
 .only-line {
   color: transparent;
-  -webkit-text-stroke: 0.15rem var(--color-dark-100);
+  -webkit-text-stroke: 0.1rem var(--color-dark-100);
 }
 
 .filled-text {

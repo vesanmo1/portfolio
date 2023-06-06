@@ -1,30 +1,37 @@
-@import "../../scss/global.scss";
+// HEADER ====================================================
 
-.landing {
-  min-height: calc(100vh - 64px);
-}
-
-.gatito-100 {
-  height: 100vh;
+.header {
+  height: calc(100vh - 75px);
+  display: flex;
   align-items: center;
 }
 
-.section-img-content {
-  &__title {
-    font-size: 40px;
-    font-weight: 500;
-  }
+// PROJECTS CARDS ====================================================
 
-  &__description {
-    font-size: 30px;
-    font-weight: 300;
-  }
+.cards__container {
+  display: flex;
+  flex-basis: 0;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 36px;
+}
 
-  &__button {
-    background: blue;
+.card {
+  flex-grow: 1;
+  padding: 3rem 3rem;
+  border: 2px solid var(--color-dark-100);
+  border-radius: 24px;
+  &.color-cookie {
+    background-color: var(--color-project-cookie);
+  }
+  &.color-kamele {
+    background-color: var(--color-project-kamele);
+  }
+  &.color-about-me {
+    background-color: var(--color-project-about-me);
   }
 }
 
-.red {
-  background-color: red;
+.card__image-container {
+  display: flex;
 }
