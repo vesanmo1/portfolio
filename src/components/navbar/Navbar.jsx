@@ -9,6 +9,7 @@ function Navbar() {
     //cuando está true lo pasa a false y viceversa
     setClicked(!clicked);
   };
+
   return (
     <>
       <nav className="navbar">
@@ -18,19 +19,19 @@ function Navbar() {
         <ul
           className={`navbar__sections-links on-top ${clicked ? "active" : ""}`}
         >
-          <li>
+          <li className="sections">
             <a href="#hello">¡Hola!</a>
           </li>
-          <li>
+          <li className="sections">
             <a href="#my-projects">Mis proyectos</a>
           </li>
-          <li>
+          <li className="sections">
             <a href="#what-i-do">Qué hago</a>
           </li>
-          <li>
+          <li className="sections">
             <a href="#who-i-am">Quién soy</a>
           </li>
-          <li>
+          <li className="sections">
             <a href="#contact">¿Hablamos?</a>
           </li>
         </ul>

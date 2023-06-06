@@ -1,10 +1,11 @@
 .navbar {
   height: 75px;
   padding: 0 250px;
-  background-color: var(--color-primary);
+  background-color: var(--color-light-100);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid var(--color-dark-100);
 
   & .navbar__sections-links,
   .navbar__rrss-links {
@@ -14,8 +15,16 @@
     align-items: center;
     gap: 3rem;
     & a {
-      color: var(--color-dark-100);
       text-decoration: none;
+    }
+    & .sections:hover {
+      background-color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    & .active {
+      background-color: var(--color-primary);
+      transition: all 0.3s ease;
     }
   }
 }
