@@ -109,15 +109,15 @@ function Landing() {
           })}
         </div>
       </div>
-      <div className="side-padding padding-top-sections">
+      <div className="side-padding padding-top-sections padding-bottom-sections">
         <h2 className="only-line uppercase">
           Te hablo un poco más <span className="filled-text">sobre mí.</span>
         </h2>
         <p className="h3">
           Descubre mi trayectoria y obtén una visión más completa de quién soy.
         </p>
-        <div className="split-content padding-top-subsections">
-          <div className="content claim-container">
+        <div className="split-content align-start padding-top-subsections">
+          <div className="content small claim-container">
             <div className="claim">
               <p className="h5">
                 Trabajo de forma flexible y me adapto a los descubrimientos que
@@ -125,7 +125,7 @@ function Landing() {
               </p>
             </div>
           </div>
-          <div className="content paragraph-spacing">
+          <div className="content large paragraph-spacing">
             <p className="h6">
               Si has llegado hasta aquí, antes que nada, gracias por tu interés.
               Permíteme presentarme nuevamente: me llamo Verónica Sánchez, he
@@ -134,12 +134,24 @@ function Landing() {
               Desarrollo Web front-end.
             </p>
             <p className="h6">
-              Antes de comenzar el postgrado, estuve trabajando en una start-up
-              de cosmética en la que hice el diseño de la identidad visual, el
-              diseño del packaging y el de la web. En esta experiencia laboral
-              pude aprender mucho en poco tiempo y me permitió mejorar
-              enormemente en mi capacidad para resolver problemas y para
-              gestionar mi tiempo, entre otras.
+              Antes de comenzar este postgrado, estuve trabajando en una
+              start-up de cosmética en la que hice el diseño de la identidad
+              visual, el diseño del packaging y el de la web. En esta
+              experiencia laboral, pude aprender mucho en poco tiempo y me
+              permitió mejorar enormemente en mi capacidad para resolver
+              problemas y para gestionar mi tiempo, entre otras.
+            </p>
+            <p className="h6">
+              Ahora que he terminado el postgrado, he descubierto muchas cosas
+              que no sabía entonces. Además de diseño, he tenido la oportunidad
+              de estudiar código y he aprendido cómo se construye una web, algo
+              que actualmente sé que es fundamental tener en cuenta a la hora de
+              diseñar.
+            </p>
+            <p className="h6">
+              A día de hoy, estoy desando poder aplicar todos los conocimientos
+              que he ido adquiriendo en el camino, seguir aprendiendo y superar
+              nuevos retos.
             </p>
           </div>
         </div>
