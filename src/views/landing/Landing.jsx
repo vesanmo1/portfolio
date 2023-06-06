@@ -10,7 +10,7 @@ function Landing() {
 
   return (
     <>
-      <header className="header side-padding">
+      <header className="header side-padding" id="landing__hello">
         <div className="split-content">
           <div className="content large">
             <div className="aligning-container">
@@ -45,7 +45,10 @@ function Landing() {
           </div>
         </div>
       </header>
-      <div className="side-padding padding-top-sections">
+      <div
+        className="side-padding padding-top-sections"
+        id="landing__myProjects"
+      >
         <h2 className="only-line uppercase">
           Echa un vistazo a mis últimos{" "}
           <span className="filled-text">proyectos.</span>
@@ -156,7 +159,6 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="main-title-underline"></div>
     </>
   );
 }

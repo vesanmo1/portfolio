@@ -1,7 +1,7 @@
 import { Outlet, Link, HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 import "./scss/global.scss";
-import { useState } from "react";
 import Landing from "./views/landing/Landing";
 import Projects from "./views/landing/Projects";
 
@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }

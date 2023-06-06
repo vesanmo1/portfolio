@@ -17,16 +17,13 @@
     & a {
       text-decoration: none;
     }
-    & .sections:hover {
-      background-color: var(--color-primary);
-      transition: all 0.3s ease;
-    }
-
-    & .active {
-      background-color: var(--color-primary);
-      transition: all 0.3s ease;
-    }
   }
+}
+
+.sections:hover {
+  background-color: var(--color-primary);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .burguerButton {
