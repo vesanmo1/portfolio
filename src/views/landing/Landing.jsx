@@ -14,7 +14,7 @@ function Landing() {
   };
   return (
     <>
-      <header className="header side-padding align-center" id="landing__hello">
+      <header className="header padding-side align-center" id="landing__hello">
         <div className="split-content">
           <div className="content large">
             <div className="aligning-container">
@@ -59,7 +59,7 @@ function Landing() {
         </div>
       </header>
       <div
-        className="side-padding padding-top-sections"
+        className="padding-side padding-top-sections"
         id="landing__my-projects"
       >
         <h2 className="only-line uppercase">
@@ -75,7 +75,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de un sitio web con Figma, Wordpress y CSS.
             </h3>
-            <PrimaryButton onClick={() => navigation("/projects")} />
+            <PrimaryButton onClick={() => navigation("/Project-cookie")} />
             <div className="card__image-container">
               <img
                 src="images/cookie-landing.png"
@@ -89,7 +89,7 @@ function Landing() {
               Diseño UX/UI de una app de monitorización de la actividad con
               Figma.
             </h3>
-            <PrimaryButton />
+            <PrimaryButton onClick={() => navigation("/Project-kamele")} />
             <div className="card__image-container">
               <img
                 src="images/kamele-landing.png"
@@ -102,7 +102,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de una one-page usando Figma, HTML y CSS.
             </h3>
-            <PrimaryButton />
+            <PrimaryButton onClick={() => navigation("/Project-about-me")} />
             <div className="card__image-container">
               <img
                 src="images/about-me-landing.png"
@@ -113,7 +113,7 @@ function Landing() {
         </div>
       </div>
       <div
-        className="side-padding padding-top-sections"
+        className="padding-side padding-top-sections"
         id="landing__what-i-do"
       >
         <h2 className="only-line uppercase">
@@ -129,7 +129,7 @@ function Landing() {
         </div>
       </div>
       <div
-        className="side-padding padding-top-sections padding-bottom-sections"
+        className="padding-side padding-top-sections padding-bottom-sections"
         id="landing__who-i-am"
       >
         <h2 className="only-line uppercase">
