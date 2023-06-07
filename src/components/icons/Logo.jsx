@@ -1,9 +1,9 @@
-import "./Logo.scss";
+import "./Icons.scss";
 
 function Logo() {
   return (
     <svg
-      className="dimensions-logo"
+      className="dimensions-navbar"
       id="Logo"
       data-name="Logo"
       xmlns="http://www.w3.org/2000/svg"

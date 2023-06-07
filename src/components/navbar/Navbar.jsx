@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import BurguerButton from "../icons/Burguer-menu";
 import Logo from "../icons/Logo";
+import Codepen from "../icons/Codepen";
+import Linkedin from "../icons/Linkedin";
+import Github from "../icons/Github";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -79,13 +82,22 @@ function Navbar() {
             }`}
           >
             <li>
-              <a href="#hello">github</a>
+              <a href="https://codepen.io/vesanmo1" target="_blank">
+                <Codepen />
+              </a>
             </li>
             <li>
-              <a href="#my-projects">linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/ver%C3%B3nica-s%C3%A1nchez-moreno-a264441b3/"
+                target="_blank"
+              >
+                <Linkedin />
+              </a>
             </li>
             <li>
-              <a href="#what-i-do">codepen</a>
+              <a href="https://github.com/vesanmo1" target="_blank">
+                <Github />
+              </a>
             </li>
           </ul>
 
