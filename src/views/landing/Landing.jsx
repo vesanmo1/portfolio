@@ -8,9 +8,13 @@ import { useNavigate } from "react-router-dom";
 function Landing() {
   const navigation = useNavigate();
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
-      <header className="header side-padding" id="landing__hello">
+      <header className="header side-padding align-center" id="landing__hello">
         <div className="split-content">
           <div className="content large">
             <div className="aligning-container">
@@ -21,20 +25,29 @@ function Landing() {
               <div className="paragraph-spacing">
                 <p className="special-description">
                   Te invito a descubrir los{" "}
-                  <a className="hover-invert-color" href="#my-projects">
+                  <span
+                    className="a hover-invert-color"
+                    onClick={() => scrollToSection("landing__my-projects")}
+                  >
                     últimos trabajos
-                  </a>{" "}
+                  </span>{" "}
                   que he realizado, o quizás prefieras conocer{" "}
-                  <a className="hover-invert-color" href="#my-projects">
+                  <span
+                    className="a hover-invert-color"
+                    onClick={() => scrollToSection("landing__what-i-do")}
+                  >
                     qué hago
-                  </a>{" "}
+                  </span>{" "}
                   y cómo puedo aportar a tu proyecto. <br />
                 </p>
                 <p className="special-description">
                   No dudes en{" "}
-                  <a className="hover-invert-color" href="#my-projects">
+                  <span
+                    className="a hover-invert-color"
+                    onClick={() => scrollToSection("footer")}
+                  >
                     contactar
-                  </a>{" "}
+                  </span>{" "}
                   conmigo, ¡estaré encantada de responderte!
                 </p>
               </div>
@@ -47,7 +60,7 @@ function Landing() {
       </header>
       <div
         className="side-padding padding-top-sections"
-        id="landing__myProjects"
+        id="landing__my-projects"
       >
         <h2 className="only-line uppercase">
           Echa un vistazo a mis últimos{" "}
@@ -99,7 +112,10 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="side-padding padding-top-sections">
+      <div
+        className="side-padding padding-top-sections"
+        id="landing__what-i-do"
+      >
         <h2 className="only-line uppercase">
           Déjame mostrarte <span className="filled-text">qué hago.</span>
         </h2>
@@ -112,7 +128,10 @@ function Landing() {
           })}
         </div>
       </div>
-      <div className="side-padding padding-top-sections padding-bottom-sections">
+      <div
+        className="side-padding padding-top-sections padding-bottom-sections"
+        id="landing__who-i-am"
+      >
         <h2 className="only-line uppercase">
           Te hablo un poco más <span className="filled-text">sobre mí.</span>
         </h2>

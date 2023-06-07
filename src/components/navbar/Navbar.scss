@@ -1,3 +1,7 @@
+.navbar__container {
+  position: fixed;
+  width: 100vw;
+}
 .navbar {
   height: 75px;
   padding: 0 250px;
@@ -20,10 +24,16 @@
   }
 }
 
-.sections:hover {
-  background-color: var(--color-primary);
-  transition: all 0.3s ease;
-  cursor: pointer;
+.sections {
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+  }
 }
 
 .burguerButton {

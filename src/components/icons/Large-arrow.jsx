@@ -1,5 +1,4 @@
 import "./Icons.scss";
-import "../buttons/Primary-button";
 
 function LargeArrow() {
   return (
