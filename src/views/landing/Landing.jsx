@@ -14,7 +14,7 @@ function Landing() {
   };
   return (
     <>
-      <header className="header padding-side align-center" id="landing__hello">
+      <header className="header padding-side" id="landing__hello">
         <div className="split-content">
           <div className="content large">
             <div className="aligning-container">

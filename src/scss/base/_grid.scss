@@ -26,8 +26,35 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+.header-projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: -20px;
+
+  &.color-project-cookie {
+    background-color: var(--color-project-cookie);
+  }
+  &.color-project-kamele {
+    background-color: var(--color-project-kamele);
+  }
+  &.color-project-about-me {
+    background-color: var(--color-project-about-me);
+  }
+}
+
+.header__image-container {
+  padding-top: 200px;
+  max-width: 45em;
+  height: auto;
+}
+
+// CONTENT ====================================================
 .split-content {
   display: flex;
   gap: 200px;

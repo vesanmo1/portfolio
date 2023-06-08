@@ -5,7 +5,6 @@ import Codepen from "../icons/Codepen";
 import Linkedin from "../icons/Linkedin";
 import Github from "../icons/Github";
 import "./Navbar.scss";
-import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {

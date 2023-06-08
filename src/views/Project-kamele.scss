@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../../../fonts/CenturyGothic-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.kamele-title {
+  font-family: "Century Gothic", "Open Sans", sans-serif;
+  font-size: 24em;
+  -webkit-text-stroke: 0.01em var(--color-dark-100);
+  color: var(--color-primary);
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
