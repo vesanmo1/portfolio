@@ -1,3 +1,12 @@
+:root {
+  --color-blue-darkest: hsl(197, 37%, 24%);
+  --color-blue-intermediate: hsl(173, 58%, 39%);
+  --color-blue-clearest: hsl(159, 50%, 78%);
+  --color-yellow: hsl(47, 71%, 69%);
+  --color-orange: hsl(12, 76%, 61%);
+  --color-burgundy: hsl(7, 85%, 31%);
+}
+
 @font-face {
   font-family: "Century Gothic";
   src: url("../../../fonts/CenturyGothic-Bold.woff2");
@@ -9,6 +18,23 @@
   font-family: "Century Gothic", "Open Sans", sans-serif;
   font-size: 24em;
   -webkit-text-stroke: 0.01em var(--color-dark-100);
-  color: var(--color-primary);
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  & .kammele__color--blue-darkest {
+    color: var(--color-blue-darkest);
+  }
+  & .kammele__color--blue-intermediate {
+    color: var(--color-blue-intermediate);
+  }
+  & .kammele__color--blue-clearest {
+    color: var(--color-blue-clearest);
+  }
+  & .kammele__color--yellow {
+    color: var(--color-yellow);
+  }
+  & .kammele__color--orange {
+    color: var(--color-orange);
+  }
+  & .kammele__color--burgundy {
+    color: var(--color-burgundy);
+  }
 }

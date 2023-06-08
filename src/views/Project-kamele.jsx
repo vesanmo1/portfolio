@@ -11,15 +11,19 @@ function ProjectKamele() {
           />
         </div>
         <div className="header__title-container">
-          <h1 className="kamele-title">
-            <span>k</span>
-            <span>a</span>
-            <span>m</span>
-            <span>e</span>
-            <span>l</span>
-            <span>e</span>
-          </h1>
+          <p className="kamele-title">
+            <span className="kammele__color--blue-darkest">k</span>
+            <span className="kammele__color--blue-intermediate">a</span>
+            <span className="kammele__color--blue-clearest">m</span>
+            <span className="kammele__color--yellow">e</span>
+            <span className="kammele__color--orange">l</span>
+            <span className="kammele__color--burgundy">e</span>
+          </p>
         </div>
+        <h1 className="h4 header__subtitle-container">
+          La app que monitoriza la calidad de vida en pacientes que empiezan un
+          tratamiento oncológico.
+        </h1>
       </header>
     </>
   );
