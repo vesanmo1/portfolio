@@ -12,6 +12,7 @@ function Landing() {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <>
       <header className="header padding-side" id="landing__hello">
@@ -75,7 +76,12 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de un sitio web con Figma, Wordpress y CSS.
             </h3>
-            <PrimaryButton onClick={() => navigation("/Project-cookie")} />
+            <PrimaryButton
+              onClick={() => {
+                navigation("/Project-cookie");
+                window.scrollTo(0, 0);
+              }}
+            />
             <div className="card__image-container">
               <img
                 src="images/cookie-landing.png"
