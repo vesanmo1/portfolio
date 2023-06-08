@@ -93,10 +93,17 @@ p,
 a,
 .a {
   all: unset;
-  font-weight: bold;
   cursor: pointer;
   text-decoration: underline;
 }
+
+// TEXT BOLD  ====================================================
+
+.bold {
+  font-weight: bold;
+}
+
+// HOVER: INVERT COLORS  ====================================================
 
 .hover-invert-color {
   &:hover,
@@ -107,16 +114,20 @@ a,
   }
 }
 
+// SINGLE LINE TEXT  ====================================================
+
 .only-line {
   color: transparent;
   -webkit-text-stroke: 0.1rem var(--color-dark-100);
 }
 
+// REMOVE SINGLE LINE  ====================================================
 .filled-text {
   color: var(--color-dark-100);
   -webkit-text-stroke: 0;
 }
 
+// UPPERCASE  ====================================================
 .uppercase {
   text-transform: uppercase;
 }

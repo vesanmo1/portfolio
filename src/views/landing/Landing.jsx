@@ -1,6 +1,6 @@
 import "./Landing.scss";
 import HeaderIllustration from "./header-illustration/Header-illustration";
-import PrimaryButton from "../../components/buttons/Primary-button";
+import ViewMore from "../../components/buttons/View-more";
 import { data } from "./data-what-i-do/data";
 import { Accordion } from "../../components/accordion/Accordion";
 import { useNavigate } from "react-router-dom";
@@ -27,14 +27,14 @@ function Landing() {
                 <p className="special-description">
                   Te invito a descubrir los{" "}
                   <span
-                    className="a hover-invert-color"
+                    className="a bold hover-invert-color"
                     onClick={() => scrollToSection("landing__my-projects")}
                   >
                     últimos trabajos
                   </span>{" "}
                   que he realizado, o quizás prefieras conocer{" "}
                   <span
-                    className="a hover-invert-color"
+                    className="a bold hover-invert-color"
                     onClick={() => scrollToSection("landing__what-i-do")}
                   >
                     qué hago
@@ -44,7 +44,7 @@ function Landing() {
                 <p className="special-description">
                   No dudes en{" "}
                   <span
-                    className="a hover-invert-color"
+                    className="a bold hover-invert-color"
                     onClick={() => scrollToSection("footer")}
                   >
                     contactar
@@ -76,7 +76,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de un sitio web con Figma, Wordpress y CSS.
             </h3>
-            <PrimaryButton
+            <ViewMore
               onClick={() => {
                 navigation("/Project-cookie");
                 window.scrollTo(0, 0);
@@ -95,7 +95,7 @@ function Landing() {
               Diseño UX/UI de una app de monitorización de la actividad con
               Figma.
             </h3>
-            <PrimaryButton onClick={() => navigation("/Project-kamele")} />
+            <ViewMore onClick={() => navigation("/Project-kamele")} />
             <div className="card__image-container">
               <img
                 src="images/kamele-landing.png"
@@ -108,7 +108,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de una one-page usando Figma, HTML y CSS.
             </h3>
-            <PrimaryButton onClick={() => navigation("/Project-about-me")} />
+            <ViewMore onClick={() => navigation("/Project-about-me")} />
             <div className="card__image-container">
               <img
                 src="images/about-me-landing.png"

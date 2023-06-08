@@ -1,4 +1,4 @@
-import "./Primary-button.scss";
+import "./View-more.scss";
 import LargeArrow from "../icons/Large-arrow";
 
 function PrimaryButton(props) {

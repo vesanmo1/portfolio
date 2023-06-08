@@ -3,7 +3,7 @@ import "./Icons.scss";
 function ChevronDown() {
   return (
     <svg
-      className="h3size"
+      className="h3-h4size"
       width="24"
       height="25"
       viewBox="0 0 24 25"

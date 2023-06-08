@@ -94,3 +94,21 @@
     width: 33.3%;
   }
 }
+
+// INVERT COLORS ====================================================
+
+.icon-and-text {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+// INVERT COLORS ====================================================
+.invert-colors {
+  color: var(--color-light-100);
+  background-color: var(--color-dark-100);
+}
+
+.text__color-primary {
+  color: var(--color-primary);
+}

@@ -3,8 +3,6 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import "./scss/global.scss";
 
-import ScrollToTop from "./components/scroll-to-top/Scroll-to-top";
-
 import Landing from "./views/landing/Landing";
 import ProjectCookie from "./views/Project-cookie";
 import ProjectKamele from "./views/Project-kamele";
@@ -14,13 +12,12 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Router>
-        <ScrollToTop />
+      <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/Project-cookie" element={<ProjectCookie />} />
         <Route path="/Project-kamele" element={<ProjectKamele />} />
         <Route path="/Project-about-me" element={<ProjectAboutMe />} />
-      </Router>
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
