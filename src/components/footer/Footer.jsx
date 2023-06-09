@@ -5,12 +5,12 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <>
-      <div class="padding-side padding-top-sections padding-bottom-sections invert-colors">
-        <h2 class="special-title">¿Hablamos?</h2>
-        <h3 class="h3">
+      <div className="padding-side padding-top-median padding-bottom-median invert-colors">
+        <h2 className="special-title">¿Hablamos?</h2>
+        <h3 className="h3">
           Si te ha gustado lo que hago no dudes en ponerte en contacto conmigo:
         </h3>
-        <div className="mail__container icon-and-text">
+        <div className="mail__container same-line gap">
           <Email />
           <a className="h4 text__color-primary">
             veronicasanchez.design@gmail.com

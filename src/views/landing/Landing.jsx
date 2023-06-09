@@ -59,10 +59,7 @@ function Landing() {
           </div>
         </div>
       </header>
-      <div
-        className="padding-side padding-top-sections"
-        id="landing__my-projects"
-      >
+      <div className="padding-side padding-top-large" id="landing__my-projects">
         <h2 className="only-line uppercase">
           Echa un vistazo a mis últimos{" "}
           <span className="filled-text">proyectos.</span>
@@ -70,7 +67,7 @@ function Landing() {
         <p className="h3">
           Siempre busco crear experiencias intuitivas, atractivas y accesibles.
         </p>
-        <div className="cards__container padding-top-subsections">
+        <div className="cards__container padding-top-median">
           <div className="card color-cookie">
             <p className="uppercase">The cookie jar</p>
             <h3 className="h5">
@@ -84,7 +81,7 @@ function Landing() {
             />
             <div className="card__image-container">
               <img
-                src="images/cookie-landing.png"
+                src="images/landing/cookie-landing.png"
                 alt="Imagen de un teléfono móvil flotando junto a unas galletas. En la pantalla del móvil se puede ver el logotipo de la marca de la que se explica el proceso de diseño."
               />
             </div>
@@ -98,7 +95,7 @@ function Landing() {
             <ViewMore onClick={() => navigation("/Project-kamele")} />
             <div className="card__image-container">
               <img
-                src="images/kamele-landing.png"
+                src="images/landing/kamele-landing.png"
                 alt="Imagen de dos teléfonos móviles. En las pantallas de los teléfonos se puede ver parte del diseño de la aplicación Kamele."
               />
             </div>
@@ -111,31 +108,28 @@ function Landing() {
             <ViewMore onClick={() => navigation("/Project-about-me")} />
             <div className="card__image-container">
               <img
-                src="images/about-me-landing.png"
+                src="images/landing/about-me-landing.png"
                 alt="Imagen de una tablet. En la pantalla de la tablet se puede ver el diseño de la web."
               />
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="padding-side padding-top-sections"
-        id="landing__what-i-do"
-      >
+      <div className="padding-side padding-top-large" id="landing__what-i-do">
         <h2 className="only-line uppercase">
           Déjame mostrarte <span className="filled-text">qué hago.</span>
         </h2>
         <p className="h3">
           Aporto soluciones para que tu sitio web esté en lo más alto.
         </p>
-        <div className="padding-top-subsections">
+        <div className="padding-top-median">
           {data.map((section, index) => {
             return <Accordion key={index} section={section} />;
           })}
         </div>
       </div>
       <div
-        className="padding-side padding-top-sections padding-bottom-sections"
+        className="padding-side padding-top-large padding-bottom-large"
         id="landing__who-i-am"
       >
         <h2 className="only-line uppercase">
@@ -144,7 +138,7 @@ function Landing() {
         <p className="h3">
           Descubre mi trayectoria y obtén una visión más completa de quién soy.
         </p>
-        <div className="split-content align-start padding-top-subsections">
+        <div className="split-content align-start padding-top-median">
           <div className="content small claim-container">
             <div className="claim">
               <p className="h5">

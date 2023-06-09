@@ -132,7 +132,7 @@ function HeaderIllustration() {
         x2="19.7177"
         y2="383.79"
         stroke="black"
-        stroke-dasharray="7 7"
+        strokeDasharray="7 7"
       />
       <circle cx="19.2177" cy="312.79" r="5.5" fill="white" stroke="black" />
       <circle cx="19.7177" cy="242.29" r="4.5" fill="black" />

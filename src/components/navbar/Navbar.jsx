@@ -11,8 +11,22 @@ function Navbar() {
   const navigation = useNavigate();
 
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: "smooth" });
+    const isHomePage = window.location.pathname === "/";
+    if (isHomePage) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const section = document.getElementById(id);
+      const handleNavigation = () => {
+        if (window.location.pathname === "/") {
+          window.removeEventListener("DOMContentLoaded", handleNavigation);
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
+      window.addEventListener("DOMContentLoaded", handleNavigation);
+      window.location.href = "/";
+    }
   };
 
   //Navbar from mobile
@@ -38,35 +52,35 @@ function Navbar() {
               }`}
             >
               <li
-                tabindex="0"
+                tabIndex="0"
                 onClick={() => scrollToSection("landing__hello")}
                 className="sections"
               >
                 ¡Hola!
               </li>
               <li
-                tabindex="0"
+                tabIndex="0"
                 onClick={() => scrollToSection("landing__my-projects")}
                 className="sections"
               >
                 Mis proyectos
               </li>
               <li
-                tabindex="0"
+                tabIndex="0"
                 onClick={() => scrollToSection("landing__what-i-do")}
                 className="sections"
               >
                 Qué hago
               </li>
               <li
-                tabindex="0"
+                tabIndex="0"
                 onClick={() => scrollToSection("landing__who-i-am")}
                 className="sections"
               >
                 Quién soy
               </li>
               <li
-                tabindex="0"
+                tabIndex="0"
                 onClick={() => scrollToSection("footer")}
                 className="sections"
               >

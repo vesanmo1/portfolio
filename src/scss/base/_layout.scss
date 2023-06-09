@@ -2,16 +2,28 @@
   padding: 0 250px;
 }
 
-.padding-top-sections {
+.padding-top-large {
   padding-top: 150px;
 }
 
-.padding-bottom-sections {
+.padding-bottom-large {
   padding-bottom: 150px;
 }
 
-.padding-top-subsections {
+.padding-top-median {
   padding-top: 100px;
+}
+
+.padding-bottom-median {
+  padding-bottom: 100px;
+}
+
+.padding-top-small {
+  padding-top: 50px;
+}
+
+.padding-bottom-small {
+  padding-bottom: 50px;
 }
 
 .paragraph-spacing {
@@ -40,6 +52,10 @@
   align-items: center;
   justify-content: center;
 
+  &.border-bottom {
+    border-bottom: 3px solid var(--color-dark-100);
+  }
+
   &.color-project-cookie {
     background-color: var(--color-project-cookie);
   }
@@ -52,7 +68,8 @@
 }
 
 .header__image-container {
-  max-width: 45em;
+  padding-top: 75px;
+  max-width: 40em;
   height: auto;
 }
 
@@ -82,7 +99,6 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   &.large {
     width: 66.6%;
@@ -95,12 +111,14 @@
   }
 }
 
-// INVERT COLORS ====================================================
+// SAME LINE ELEMENTS ====================================================
 
-.icon-and-text {
+.same-line {
   display: flex;
   align-items: center;
-  gap: 1em;
+  &.gap {
+    gap: 1em;
+  }
 }
 
 // INVERT COLORS ====================================================

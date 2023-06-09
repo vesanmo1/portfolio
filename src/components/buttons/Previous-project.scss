@@ -1,0 +1,30 @@
+.btn__previous-project {
+  cursor: pointer;
+  border-top: 3px solid var(--color-dark-100);
+  border-right: 1.5px solid var(--color-dark-100);
+  text-align: right;
+
+  &.color-cookie {
+    background-color: var(--color-project-cookie);
+  }
+  &.color-kamele {
+    background-color: var(--color-project-kamele);
+  }
+  &.color-about-me {
+    background-color: var(--color-project-about-me);
+  }
+}
+
+.btn__image-container {
+  display: flex;
+  max-height: 250px;
+}
+
+.btn__image {
+  width: auto;
+  height: 100%;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
