@@ -2,6 +2,10 @@
   padding: 0 250px;
 }
 
+.padding-side-extra {
+  padding: 0 500px;
+}
+
 .padding-top-large {
   padding-top: 150px;
 }
@@ -100,6 +104,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &.align-center {
+    align-items: center;
+  }
   &.large {
     width: 66.6%;
   }

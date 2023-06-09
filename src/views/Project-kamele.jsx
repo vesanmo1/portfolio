@@ -1,6 +1,9 @@
 import "./Project-kamele.scss";
 import NextProjectCookie from "../components/buttons/Next-project-cookie";
 import PreviousProjectCookie from "../components/buttons/Previous-project-cookie";
+import Magnify from "../components/icons/Magnify";
+import Sitemap from "../components/icons/Sitemap";
+import Brush from "../components/icons/Brush";
 
 function ProjectKamele() {
   return (
@@ -65,34 +68,35 @@ function ProjectKamele() {
           </div>
         </div>
       </div>
-      <div className="padding-side padding-top-large">
-        <div className="split-content align-center">
+      <div className="padding-side-extra padding-top-large content align-center">
+        <div>
           <div className="same-line gap padding-bottom-small">
-            <p className="h2 only-line uppercase">01</p>
-            <h5>Objetivos del proyecto</h5>
+            <p className="h2 only-line uppercase">02</p>
+            <h5>Mi contribución al proyecto</h5>
           </div>
           <div>
-            <ol>
+            <ul>
               <li>
-                1. Diseñar una interfaz que permita a los pacientes&nbsp;
-                <strong>monitorizar sus actividades y calidad de vida.</strong>
+                <div className="mail__container same-line gap">
+                  <Magnify />
+                  <p className="h6">Investigación de experiencia de usuario</p>
+                </div>
               </li>
               <li>
-                2. Obtener un registro o&nbsp;<strong>historial</strong>
-                &nbsp;con el que los médicos puedan obtener&nbsp;
-                <strong>patrones de conducta del usuario</strong>
-                &nbsp;y relacionarlos con indicadores de calidad de vida.
+                <div className="mail__container same-line gap">
+                  <Sitemap />
+                  <p className="h6">Arquitectura informacional</p>
+                </div>
               </li>
               <li>
-                3. Crear un&nbsp;<strong>diseño intuitivo y fácil</strong>
-                &nbsp;diseño intuitivo y fácil de usar.
+                <div className="mail__container same-line gap">
+                  <Brush />
+                  <p className="h6">
+                    Diseño de experiencia de usuario y de interfaz
+                  </p>
+                </div>
               </li>
-              <li>
-                4. Crear una&nbsp;<strong>interfaz atractiva</strong>
-                &nbsp;que se aleje de los típicos diseño de interfaces de
-                hospital.
-              </li>
-            </ol>
+            </ul>
           </div>
         </div>
       </div>
