@@ -3,15 +3,23 @@ import HeaderIllustration from "./header-illustration/Header-illustration";
 import ViewMore from "../../components/buttons/View-more";
 import { data } from "./data-what-i-do/data";
 import { Accordion } from "../../components/accordion/Accordion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Landing() {
+  const p = useLocation();
   const navigation = useNavigate();
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (p.hash) {
+      scrollToSection(p.hash.substring(1));
+    }
+  }, [p.hash]);
 
   return (
     <>
@@ -73,12 +81,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de un sitio web con Figma, Wordpress y CSS.
             </h3>
-            <ViewMore
-              onClick={() => {
-                navigation("/Project-cookie");
-                window.scrollTo(0, 0);
-              }}
-            />
+            <ViewMore to={"/Project-cookie"} />
             <div className="card__image-container">
               <img
                 src="images/landing/cookie-landing.png"
@@ -92,7 +95,7 @@ function Landing() {
               Diseño UX/UI de una app de monitorización de la actividad con
               Figma.
             </h3>
-            <ViewMore onClick={() => navigation("/Project-kamele")} />
+            <ViewMore to={"/Project-kamele"} />
             <div className="card__image-container">
               <img
                 src="images/landing/kamele-landing.png"
@@ -105,7 +108,7 @@ function Landing() {
             <h3 className="h5">
               Diseño y desarrollo de una one-page usando Figma, HTML y CSS.
             </h3>
-            <ViewMore onClick={() => navigation("/Project-about-me")} />
+            <ViewMore to={"/Project-about-me"} />
             <div className="card__image-container">
               <img
                 src="images/landing/about-me-landing.png"

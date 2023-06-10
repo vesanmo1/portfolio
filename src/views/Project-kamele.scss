@@ -1,3 +1,5 @@
+//TITLE COLORS  ========================================
+
 :root {
   --color-blue-darkest: hsl(197, 37%, 24%);
   --color-blue-intermediate: hsl(173, 58%, 39%);
@@ -39,6 +41,26 @@
   }
 }
 
-.min-height {
-  height: min(600px);
+//PREVIOUS AND NEXT BUTTONS  ========================================
+
+.color-cookie {
+  background-color: var(--color-project-cookie);
+  &:hover,
+  &:focus {
+    background-color: var(--color-project-cookie-darker);
+  }
+}
+.color-kamele {
+  background-color: var(--color-project-kamele);
+  &:hover,
+  &:focus {
+    background-color: var(--color-project-kamele-darker);
+  }
+}
+.color-about-me {
+  background-color: var(--color-project-about-me);
+  &:hover,
+  &:focus {
+    background-color: var(--color-project-about-me-darker);
+  }
 }

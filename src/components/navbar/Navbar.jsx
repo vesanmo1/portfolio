@@ -1,34 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BurguerButton from "../icons/Burguer-menu";
 import Logo from "../icons/Logo";
 import Codepen from "../icons/Codepen";
 import Linkedin from "../icons/Linkedin";
 import Github from "../icons/Github";
 import "./Navbar.scss";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const navigation = useNavigate();
-
-  const scrollToSection = (id) => {
-    const isHomePage = window.location.pathname === "/";
-    if (isHomePage) {
-      const section = document.getElementById(id);
-      section.scrollIntoView({ behavior: "smooth" });
-    } else {
-      const section = document.getElementById(id);
-      const handleNavigation = () => {
-        if (window.location.pathname === "/") {
-          window.removeEventListener("DOMContentLoaded", handleNavigation);
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      };
-
-      window.addEventListener("DOMContentLoaded", handleNavigation);
-      window.location.href = "/";
-    }
-  };
-
   //Navbar from mobile
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
@@ -41,9 +20,9 @@ function Navbar() {
       <div className="navbar__container">
         <nav className="navbar">
           <li>
-            <a href="/" onClick={() => navigation("/")}>
+            <Link to="/">
               <Logo />
-            </a>
+            </Link>
           </li>
           <div>
             <ul
@@ -51,40 +30,20 @@ function Navbar() {
                 clicked ? "active" : ""
               }`}
             >
-              <li
-                tabIndex="0"
-                onClick={() => scrollToSection("landing__hello")}
-                className="sections"
-              >
-                ¡Hola!
+              <li tabIndex="0" className="sections">
+                <Link to="/#landing__hello">¡Hola!</Link>
               </li>
-              <li
-                tabIndex="0"
-                onClick={() => scrollToSection("landing__my-projects")}
-                className="sections"
-              >
-                Mis proyectos
+              <li tabIndex="0" className="sections">
+                <Link to="/#landing__my-projects"> Mis proyectos</Link>
               </li>
-              <li
-                tabIndex="0"
-                onClick={() => scrollToSection("landing__what-i-do")}
-                className="sections"
-              >
-                Qué hago
+              <li tabIndex="0" className="sections">
+                <Link to="/#landing__what-i-do">Qué hago</Link>
               </li>
-              <li
-                tabIndex="0"
-                onClick={() => scrollToSection("landing__who-i-am")}
-                className="sections"
-              >
-                Quién soy
+              <li tabIndex="0" className="sections">
+                <Link to="/#landing__who-i-am"> Quién soy</Link>
               </li>
-              <li
-                tabIndex="0"
-                onClick={() => scrollToSection("footer")}
-                className="sections"
-              >
-                ¿Hablamos?
+              <li tabIndex="0" className="sections">
+                <Link to="#footer"> ¿Hablamos?</Link>
               </li>
             </ul>
           </div>

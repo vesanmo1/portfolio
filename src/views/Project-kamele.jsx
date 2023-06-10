@@ -1,6 +1,6 @@
 import "./Project-kamele.scss";
-import NextProjectCookie from "../components/buttons/Next-project-cookie";
-import PreviousProjectCookie from "../components/buttons/Previous-project-cookie";
+import NextProject from "../components/buttons/Next-project";
+import PreviousProject from "../components/buttons/Previous-project";
 import Magnify from "../components/icons/Magnify";
 import Sitemap from "../components/icons/Sitemap";
 import Brush from "../components/icons/Brush";
@@ -68,7 +68,7 @@ function ProjectKamele() {
           </div>
         </div>
       </div>
-      <div className="padding-side-extra padding-top-large content align-center">
+      <div className="padding-side padding-top-large content align-center">
         <div>
           <div className="same-line gap padding-bottom-small">
             <p className="h2 only-line uppercase">02</p>
@@ -107,8 +107,12 @@ function ProjectKamele() {
         />
       </div>
       <div className="same-line">
-        <PreviousProjectCookie />
-        <NextProjectCookie />
+        <div className="color-cookie">
+          <PreviousProject to={"/Project-cookie"} />
+        </div>
+        <div className="color-about-me">
+          <NextProject to={"/Project-about-me"} />
+        </div>
       </div>
     </>
   );

@@ -1,17 +1,16 @@
 import "./View-more.scss";
 import LargeArrow from "../icons/Large-arrow";
+import { Link } from "react-router-dom";
 
 function ViewMore(props) {
   return (
-    <button
-      onClick={() => {
-        if (props?.onClick) props?.onClick();
-      }}
-      className="btn__view-more p"
+    <Link
+      to={props.to}
+      className="btn__view-more p btn__view-more--kamele btn__view-more--cookie btn__view-more--about-me"
     >
       Ver más
       <LargeArrow />
-    </button>
+    </Link>
   );
 }
 export default ViewMore;

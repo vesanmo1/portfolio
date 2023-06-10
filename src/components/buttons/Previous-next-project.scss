@@ -1,0 +1,21 @@
+.btn__project {
+  flex-grow: 1;
+  cursor: pointer;
+  border-top: 3px solid var(--color-dark-100);
+
+  &.btn__project--previous {
+    border-right: 1.5px solid var(--color-dark-100);
+    padding: 2em 4em 2em 16em;
+    text-align: right;
+  }
+
+  &.btn__project--next {
+    border-left: 1.5px solid var(--color-dark-100);
+    padding: 2em 16em 2em 4em;
+    text-align: left;
+  }
+}
+
+.decoration-none {
+  text-decoration: none;
+}

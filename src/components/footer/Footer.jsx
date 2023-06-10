@@ -5,7 +5,10 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <>
-      <div className="padding-side padding-top-median padding-bottom-median invert-colors">
+      <footer
+        className="padding-side padding-top-median padding-bottom-median invert-colors"
+        id="footer"
+      >
         <h2 className="special-title">¿Hablamos?</h2>
         <h3 className="h3">
           Si te ha gustado lo que hago no dudes en ponerte en contacto conmigo:
@@ -21,7 +24,7 @@ const Footer = () => {
           <a>Política de privacidad</a>
           <a>Cookies</a>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
