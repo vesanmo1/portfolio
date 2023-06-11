@@ -7,7 +7,7 @@ function PreviousProject(props) {
   return (
     <div className="btn__project btn__project--previous">
       <Link to={props.to} className="decoration-none">
-        <div className="same-line gap padding-bottom-small btn__project--previous">
+        <div className="same-line gap padding-bottom-small justify-end">
           <LongestArrowRotated />
           <p className="h3">
             Ver proyecto

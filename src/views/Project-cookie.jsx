@@ -18,8 +18,8 @@ function ProjectCookie() {
       <div className="same-line">
         <div className="btn__color-about-me">
           <PreviousProject
-            to={"/Project-cookie"}
-            projectTitle={"The Cookie Jar"}
+            to={"/Project-about-me"}
+            projectTitle={"About me"}
             projectDescription={
               "Diseño y desarrollo de una one-page usando Figma, HTML y CSS."
             }
@@ -27,7 +27,7 @@ function ProjectCookie() {
         </div>
         <div className="btn__color-kamele">
           <NextProject
-            to={"/Project-about-me"}
+            to={"/Project-kamele"}
             projectTitle={"Kamele"}
             projectDescription={
               "Diseño UX/UI de una app de monitorización de la actividad con Figma."

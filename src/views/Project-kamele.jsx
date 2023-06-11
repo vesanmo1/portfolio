@@ -5,6 +5,14 @@ import Magnify from "../components/icons/Magnify";
 import Sitemap from "../components/icons/Sitemap";
 import Brush from "../components/icons/Brush";
 
+//WIREFRAMES=================================================
+import KameleCalendar from "../components/wireframes-kamele/Kamele-calendar";
+import KameleCheckbox from "../components/wireframes-kamele/Kamele-checkbox";
+import KameleHome from "../components/wireframes-kamele/Kamele-home";
+import KameleProfile from "../components/wireframes-kamele/Kamele-profile";
+import KameleQuestionnaire from "../components/wireframes-kamele/Kamele-questionnaire";
+import KameleToday from "../components/wireframes-kamele/Kamele-today";
+
 function ProjectKamele() {
   let projectTitle;
   let projectDescription;
@@ -108,6 +116,69 @@ function ProjectKamele() {
           alt="Imagen con 2 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación"
         />
       </div>
+      <div className="padding-side padding-top-large">
+        <div className="padding-bottom-median">
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">03</p>
+            <h5>Investigación , descubrimientos y conclusiones</h5>
+          </div>
+          <p>
+            Hay muchas aplicaciones de monitorización de las actividades, pero
+            no están enfocadas ni preparadas para las necesidades de personas
+            que empiezan un tratamiento oncológico. Por tanto, el reto de este
+            proyecto, es crear una app que cubra las necesidades específicas de
+            los pacientes y, sobre todo, obtener patrones de comportamiento del
+            usuario. Estos datos son muy valiosos para la toma de decisiones de
+            los médicos.
+          </p>
+        </div>
+        <div>
+          <p className="h3">Propuesta de valor y perfil del cliente</p>
+        </div>
+      </div>
+      <div className="padding-side padding-top-large">
+        <div className="padding-bottom-median">
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">04</p>
+            <h5>Wireframes</h5>
+          </div>
+          <p>
+            Los wireframes nos permitieron ahorrar tiempo a la hora de definir y
+            planificar la disposición de los elementos de la interfaz. También
+            nos permitieron estudiar primero la usabilidad y la experiencia del
+            usuario, dejando los aspectos visuales a un lado y enfocándonos en
+            la organización de los elementos y el flujo de interacción. Además,
+            nos ayudaron a comunicarnos dentro del equipo y alinear las
+            expectativas y objetivos del proyecto.
+          </p>
+        </div>
+        <div className="same-line gap">
+          <KameleHome />
+          <KameleToday />
+          <KameleCalendar />
+          <KameleProfile />
+          <KameleCheckbox />
+          <KameleQuestionnaire />
+        </div>
+      </div>
+      <div className="padding-side padding-top-large">
+        <div className="padding-bottom-median">
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">04</p>
+            <h5>Wireframes</h5>
+          </div>
+          <p>
+            Los wireframes nos permitieron ahorrar tiempo a la hora de definir y
+            planificar la disposición de los elementos de la interfaz. También
+            nos permitieron estudiar primero la usabilidad y la experiencia del
+            usuario, dejando los aspectos visuales a un lado y enfocándonos en
+            la organización de los elementos y el flujo de interacción. Además,
+            nos ayudaron a comunicarnos dentro del equipo y alinear las
+            expectativas y objetivos del proyecto.
+          </p>
+        </div>
+      </div>
+
       <div className="same-line">
         <div className="btn__color-cookie">
           <PreviousProject
