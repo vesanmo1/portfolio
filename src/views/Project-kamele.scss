@@ -43,21 +43,21 @@
 
 //PREVIOUS AND NEXT BUTTONS  ========================================
 
-.color-cookie {
+.btn__color-cookie {
   background-color: var(--color-project-cookie);
   &:hover,
   &:focus {
     background-color: var(--color-project-cookie-darker);
   }
 }
-.color-kamele {
+.btn__color-kamele {
   background-color: var(--color-project-kamele);
   &:hover,
   &:focus {
     background-color: var(--color-project-kamele-darker);
   }
 }
-.color-about-me {
+.btn__color-about-me {
   background-color: var(--color-project-about-me);
   &:hover,
   &:focus {

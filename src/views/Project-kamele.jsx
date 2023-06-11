@@ -6,6 +6,8 @@ import Sitemap from "../components/icons/Sitemap";
 import Brush from "../components/icons/Brush";
 
 function ProjectKamele() {
+  let projectTitle;
+  let projectDescription;
   return (
     <>
       <header className="header-projects border-bottom color-project-kamele padding-side">
@@ -107,11 +109,23 @@ function ProjectKamele() {
         />
       </div>
       <div className="same-line">
-        <div className="color-cookie">
-          <PreviousProject to={"/Project-cookie"} />
+        <div className="btn__color-cookie">
+          <PreviousProject
+            to={"/Project-cookie"}
+            projectTitle={"The cookie Jar"}
+            projectDescription={
+              "Diseño y desarrollo de un sitio web con Figma, Wordpress y CSS."
+            }
+          />
         </div>
-        <div className="color-about-me">
-          <NextProject to={"/Project-about-me"} />
+        <div className="btn__color-about-me">
+          <NextProject
+            to={"/Project-about-me"}
+            projectTitle={"About me"}
+            projectDescription={
+              "Diseño y desarrollo de una one-page usando Figma, HTML y CSS."
+            }
+          />
         </div>
       </div>
     </>
