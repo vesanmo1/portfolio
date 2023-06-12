@@ -1,21 +1,28 @@
 import "./Project-kamele.scss";
-import NextProject from "../components/buttons/Next-project";
-import PreviousProject from "../components/buttons/Previous-project";
-import Magnify from "../components/icons/Magnify";
-import Sitemap from "../components/icons/Sitemap";
-import Brush from "../components/icons/Brush";
+import NextProject from "../../components/buttons/Next-project";
+import PreviousProject from "../../components/buttons/Previous-project";
+import { Accordion } from "../../components/accordion/Accordion";
+import { data } from "../landing/data-what-i-do/data";
+
+//ICONS=================================================
+import Magnify from "../../components/icons/Magnify";
+import Sitemap from "../../components/icons/Sitemap";
+import Brush from "../../components/icons/Brush";
+import Present from "../../components/icons/Present";
+import Profile from "../../components/icons/Profile";
 
 //WIREFRAMES=================================================
-import KameleCalendar from "../components/wireframes-kamele/Kamele-calendar";
-import KameleCheckbox from "../components/wireframes-kamele/Kamele-checkbox";
-import KameleHome from "../components/wireframes-kamele/Kamele-home";
-import KameleProfile from "../components/wireframes-kamele/Kamele-profile";
-import KameleQuestionnaire from "../components/wireframes-kamele/Kamele-questionnaire";
-import KameleToday from "../components/wireframes-kamele/Kamele-today";
+import KameleCalendar from "../../components/wireframes-kamele/Kamele-calendar";
+import KameleCheckbox from "../../components/wireframes-kamele/Kamele-checkbox";
+import KameleHome from "../../components/wireframes-kamele/Kamele-home";
+import KameleProfile from "../../components/wireframes-kamele/Kamele-profile";
+import KameleQuestionnaire from "../../components/wireframes-kamele/Kamele-questionnaire";
+import KameleToday from "../../components/wireframes-kamele/Kamele-today";
 
 function ProjectKamele() {
   let projectTitle;
   let projectDescription;
+
   return (
     <>
       <header className="header-projects border-bottom color-project-kamele padding-side">
@@ -113,7 +120,7 @@ function ProjectKamele() {
       <div className="padding-side padding-top-large">
         <img
           src="images/kamele/3-pantallas-kamele.png"
-          alt="Imagen con 2 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación"
+          alt="Imagen con 3 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación."
         />
       </div>
       <div className="padding-side padding-top-large">
@@ -133,10 +140,83 @@ function ProjectKamele() {
           </p>
         </div>
         <div>
-          <p className="h3">Propuesta de valor y perfil del cliente</p>
+          <p className="h3 padding-bottom-small">
+            Propuesta de valor y perfil del cliente
+          </p>
+        </div>
+        <div>
+          <div className="split-content space-between align-start">
+            <div className="content equal">
+              <div className="same-line gap padding-bottom-small">
+                <Present />
+                <p className="h4">Propuesta de valor</p>
+              </div>
+              <div>
+                {data.map((section, index) => {
+                  return <Accordion key={index} section={section} />;
+                })}
+              </div>
+            </div>
+            <div className="content equal">
+              <div className="same-line gap padding-bottom-small">
+                <Profile />
+                <p className="h4">Perfil del cliente</p>
+              </div>
+              <div>
+                {data.map((section, index) => {
+                  return <Accordion key={index} section={section} />;
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="padding-top-median split-content">
+          <div className="content align-center equal">
+            <img
+              className="max-height"
+              src="images/kamele/notification-kamele.png"
+              alt="Imagen con 2 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación"
+            />
+          </div>
+          <div className="content equal">
+            <p className="h3 padding-bottom-small">
+              Conclusiones de las encuestas y del journey map
+            </p>
+
+            <p>- Hacer un proceso de registro sencillo y rápido.</p>
+            <p>
+              - Ofrecer un tutorial interactivo para familiarizarse con la
+              interfaz de la aplicación.
+            </p>
+            <p>
+              - Ofrecer recordatorios y notificaciones para completar los
+              cuestionarios.
+            </p>
+            <p>
+              - Brindar retroalimentación positiva y consejos personalizados.
+            </p>
+            <p>
+              - Proporcionar visualizaciones claras y comprensibles de los datos
+              recopilados.
+            </p>
+            <p>
+              - Resaltar como un logro cuando se rellenan los cuestionarios los
+              cuestionarios diariamente.
+            </p>
+            <p>
+              - No premiar por hacer más actividades al día ya que el objetivo
+              de la app es registrar la actividad, no fomentarla.
+            </p>
+          </div>
         </div>
       </div>
       <div className="padding-side padding-top-large">
+        <img
+          src="images/kamele/5-pantallas-kamele.png"
+          alt="Imagen con 5 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación, en concreto los formularios y cuestionarios de la misma"
+        />
+      </div>
+      <div className="padding-side padding-top-median">
         <div className="padding-bottom-median">
           <div className="same-line gap padding-bottom-small">
             <p className="h2 only-line uppercase">04</p>
@@ -164,17 +244,21 @@ function ProjectKamele() {
       <div className="padding-side padding-top-large">
         <div className="padding-bottom-median">
           <div className="same-line gap padding-bottom-small">
-            <p className="h2 only-line uppercase">04</p>
-            <h5>Wireframes</h5>
+            <p className="h2 only-line uppercase">05</p>
+            <h5>Guía de estilos</h5>
           </div>
           <p>
-            Los wireframes nos permitieron ahorrar tiempo a la hora de definir y
-            planificar la disposición de los elementos de la interfaz. También
-            nos permitieron estudiar primero la usabilidad y la experiencia del
-            usuario, dejando los aspectos visuales a un lado y enfocándonos en
-            la organización de los elementos y el flujo de interacción. Además,
-            nos ayudaron a comunicarnos dentro del equipo y alinear las
-            expectativas y objetivos del proyecto.
+            Una guía de estilos garantiza la coherencia visual y de comunicación
+            en todos los aspectos de la marca, desde el logotipo hasta los
+            colores, tipografías, estilos de imágenes y tono de voz. Esto ayuda
+            a establecer una identidad de marca sólida y reconocible. Además,
+            ahorra tiempo y recursos, ya que se evita la necesidad de tomar
+            decisiones repetitivas o reinventar constantemente la apariencia y
+            el tono de la marca. Por otro lado, también mejora la experiencia
+            del usuario, dado que al mantener elementos visuales y de
+            comunicación coherentes en todos los puntos de contacto con los
+            usuarios, se genera confianza y familiaridad, lo que puede aumentar
+            la fidelidad y satisfacción del usuario.
           </p>
         </div>
       </div>

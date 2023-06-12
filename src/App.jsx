@@ -6,7 +6,7 @@ import "./scss/global.scss";
 
 import Landing from "./views/landing/Landing";
 import ProjectCookie from "./views/Project-cookie";
-import ProjectKamele from "./views/Project-kamele";
+import ProjectKamele from "./views/project-kamele/Project-kamele";
 import ProjectAboutMe from "./views/Project-about-me";
 
 function ScrollToTopOnNavigation() {
