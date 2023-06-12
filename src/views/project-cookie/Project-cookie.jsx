@@ -39,41 +39,52 @@ function ProjectCookie() {
           })}
         </div>
       </div>
-      <div className="padding-side padding-top-large">
-        <div>
-          <div className="same-line gap padding-bottom-small">
-            <p className="h2 only-line uppercase">02</p>
-            <h5>Mi contribución al proyecto</h5>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <div className="mail__container same-line gap">
-                  <Magnify />
-                  <p className="h6">Estudio de la estrategia</p>
-                </div>
-              </li>
-              <li>
-                <div className="mail__container same-line gap">
-                  <Sitemap />
-                  <p className="h6">Arquitectura informacional</p>
-                </div>
-              </li>
-              <li>
-                <div className="mail__container same-line gap">
-                  <Brush />
-                  <p className="h6">
-                    Diseño de experiencia de usuario y de interfaz
-                  </p>
-                </div>
-                <div className="mail__container same-line gap">
-                  <Code />
-                  <p className="h6">
-                    Programación de la web en Wordpress con Full Site Editing
-                  </p>
-                </div>
-              </li>
-            </ul>
+      <div>
+        <div className="padding-side padding-top-large">
+          <div className="split-content align-center">
+            <div className="content small">
+              <div className="same-line gap padding-bottom-small">
+                <p className="h2 only-line uppercase">02</p>
+                <h5>Mi contribución al proyecto</h5>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <div className="mail__container same-line gap">
+                      <Magnify />
+                      <p className="h6">Estudio de la estrategia</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="mail__container same-line gap">
+                      <Sitemap />
+                      <p className="h6">Arquitectura informacional</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="mail__container same-line gap">
+                      <Brush />
+                      <p className="h6">
+                        Diseño de experiencia de usuario y de interfaz
+                      </p>
+                    </div>
+                    <div className="mail__container same-line gap">
+                      <Code />
+                      <p className="h6">
+                        Programación de la web en Wordpress con Full Site
+                        Editing
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="content large align-center">
+              <img
+                src="images/cookie/1-pantalla-cookie.png"
+                alt="Imagen con un móvil tumbado y otro de pie donde se ven diferentes secciones de la app Kamele"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -92,19 +103,19 @@ function ProjectCookie() {
             esos objetivos específicos.
           </p>
           <p className="padding-bottom-mini">
-            También es importante, para alinear el diseño con las necesidades
-            del cliente, estudiar sus necesidades, como la información que desea
-            mostrar y el tipo de experiencia que busca, y así poder satisfacer
-            sus expectativas y brindarles un producto final que cumpla con sus
-            requerimientos.
+            También es importante, para alinear el diseño con los requisitos del
+            cliente, estudiar sus necesidades, como la información que desea que
+            se muestre y el tipo de experiencia que busca, y así poder
+            satisfacer sus expectativas y brindarles un producto final que
+            cumpla con sus requerimientos.
           </p>
           <p className="padding-bottom-mini">
             Además, el estudio del buyer persona B2C, que representa al cliente
-            ideal, es crucial para diseñar una página web que se conecte y
-            resuene con el público objetivo de The Cookie Jar. Comprender
-            quiénes son los clientes potenciales, sus características
-            demográficas, comportamientos y necesidades, permite adaptar el
-            diseño y el tono de voz para atraer y retener a esos clientes.
+            ideal, es crucial para diseñar una página web que conecte con el
+            público objetivo de The Cookie Jar. Comprender quiénes son los
+            clientes potenciales, sus características demográficas,
+            comportamientos y necesidades, permite adaptar el diseño y el tono
+            de voz para atraer y retener a esos clientes.
           </p>
           <p className="padding-bottom-mini">
             De igual forma, estudiar a la competencia proporciona una
@@ -116,23 +127,23 @@ function ProjectCookie() {
             competidores y aportar un valor único a sus clientes.
           </p>
           <p className="padding-bottom-mini">
-            Tras la estrategia previa al diseño que se realizón para el proyecto
+            Tras la estrategia previa al diseño, que se realizó para el proyecto
             de The Cookie Jar, se sacaron las siguientes conclusiones:
           </p>
           <div className="split-content space-between">
-            <div className="content equal">
+            <div className="content small">
               <ul>
-                <li className="h6 padding-bottom-mini">
+                <li className="padding-bottom-mini">
                   1. <strong>Diseño colorido y atractivo&nbsp;</strong>que
                   represente la variedad de sabores que ofrece la marca y
                   conecte con emociones de felicidad, alegría y disfrute.
                 </li>
-                <li className="h6 padding-bottom-mini">
+                <li className="padding-bottom-mini">
                   2. <strong>Mantener la identidad corporativa&nbsp;</strong>en
                   el diseño de la página web. Debe mantener la misma esencia que
                   las tiendas físicas
                 </li>
-                <li className="h6 padding-bottom-mini">
+                <li className="padding-bottom-mini">
                   3. Crear&nbsp;
                   <strong>
                     varios links en diferentes puntos de la web&nbsp;
@@ -144,7 +155,7 @@ function ProjectCookie() {
                   cliente salga de la web sabiendo dónde puede encontrar The
                   Cookie Jar.
                 </li>
-                <li className="h6 padding-bottom-mini">
+                <li className="padding-bottom-mini">
                   4.&nbsp;
                   <strong>
                     Crear un apartado de "Nuestra Historia" para que los
@@ -154,7 +165,7 @@ function ProjectCookie() {
                   tienda para que puedan comprender la filosofía que hay
                   detrásde ella.
                 </li>
-                <li className="h6 padding-bottom-mini">
+                <li className="padding-bottom-mini">
                   5.&nbsp;
                   <strong>Maquetar la web en Wordpress&nbsp;</strong>
                   para que después el cliente pueda actualizar la página de
@@ -162,14 +173,49 @@ function ProjectCookie() {
                   de Wordpress facilita la posibilidad de añadir un blog en el
                   futuro
                 </li>
+                <li className="padding-bottom-mini">
+                  5.&nbsp;
+                  <strong>Crear un error 404 personalizado.&nbsp;</strong>
+                  Al proporcionar una página de error 404 personalizada, se
+                  puede ofrecer una experiencia más amigable y comprensible para
+                  el usuario. Esto muestra que te preocupas por su experiencia y
+                  estás comprometido con la calidad de tu sitio web. Además,
+                  personalizar este error, que es más común de lo que pensamos,
+                  nos da la oportunidad de brindar información útil o
+                  alternativas relevantes dentro del sitio web, lo que puede
+                  reducir el abandono y aumentar la retención de los visitantes.
+                </li>
               </ul>
             </div>
-            <div>
+            <div className="content large">
               <img
-                src="images/kamele/2-pantallas-kamele.png"
-                alt="Imagen con un móvil tumbado y otro de pie donde se ven diferentes secciones de la app Kamele"
+                src="images/cookie/Gravity-Devices.png"
+                alt="Conjunto de dispositivos móviles flotando con diferentes partes de la web de The Cookie Jar"
               />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="padding-side padding-top-large content align-center">
+        <div>
+          <div className="same-line gap padding-bottom-small justify-center">
+            <p className="h2 only-line uppercase">04</p>
+            <h5>User Flow</h5>
+          </div>
+          <div>
+            <img
+              className="max-height900"
+              src="images/cookie/User-flow.png"
+              alt="Conjunto de dispositivos móviles flotando con diferentes partes de la web de The Cookie Jar"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="padding-side padding-top-large">
+        <div>
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">05</p>
+            <h5>Wireframes</h5>
           </div>
         </div>
       </div>

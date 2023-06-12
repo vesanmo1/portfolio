@@ -67,8 +67,14 @@
 
 //MAXIMUM IMAGE HEIGHT NOTIFICATION  ========================================
 
-.max-height {
+.max-height600 {
   max-height: 600px;
+  height: 100%;
+  width: auto;
+}
+
+.max-height900 {
+  max-height: 900px;
   height: 100%;
   width: auto;
 }
