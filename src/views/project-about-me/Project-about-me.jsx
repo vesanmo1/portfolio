@@ -1,5 +1,5 @@
-import NextProject from "../components/buttons/Next-project";
-import PreviousProject from "../components/buttons/Previous-project";
+import NextProject from "../../components/buttons/Next-project";
+import PreviousProject from "../../components/buttons/Previous-project";
 
 function ProjectAboutMe() {
   return (

@@ -1,8 +1,9 @@
 import "./Project-kamele.scss";
 import NextProject from "../../components/buttons/Next-project";
 import PreviousProject from "../../components/buttons/Previous-project";
-import { Accordion } from "../../components/accordion/Accordion";
-import { data } from "../landing/data-what-i-do/data";
+import { AccordionProjects } from "../../components/accordion/Accordion-projects";
+import { dataValueProposition } from "./data-value-proposition/data-value-proposition";
+import { dataCustomerProfile } from "./data-customer-profile/data-customer-profile";
 
 //ICONS=================================================
 import Magnify from "../../components/icons/Magnify";
@@ -18,6 +19,11 @@ import KameleHome from "../../components/wireframes-kamele/Kamele-home";
 import KameleProfile from "../../components/wireframes-kamele/Kamele-profile";
 import KameleQuestionnaire from "../../components/wireframes-kamele/Kamele-questionnaire";
 import KameleToday from "../../components/wireframes-kamele/Kamele-today";
+
+//STYLEGUIDE==================================================
+import ColorsKamele from "../../components/accordion/Styleguide-kamele/Colors-kamele";
+import TypoKamele from "../../components/accordion/Styleguide-kamele/Typo-kamele";
+import ButtonsKamele from "../../components/accordion/Styleguide-kamele/Buttons-kamele";
 
 function ProjectKamele() {
   let projectTitle;
@@ -152,8 +158,8 @@ function ProjectKamele() {
                 <p className="h4">Propuesta de valor</p>
               </div>
               <div>
-                {data.map((section, index) => {
-                  return <Accordion key={index} section={section} />;
+                {dataValueProposition.map((section, index) => {
+                  return <AccordionProjects key={index} section={section} />;
                 })}
               </div>
             </div>
@@ -163,8 +169,8 @@ function ProjectKamele() {
                 <p className="h4">Perfil del cliente</p>
               </div>
               <div>
-                {data.map((section, index) => {
-                  return <Accordion key={index} section={section} />;
+                {dataCustomerProfile.map((section, index) => {
+                  return <AccordionProjects key={index} section={section} />;
                 })}
               </div>
             </div>
@@ -241,7 +247,7 @@ function ProjectKamele() {
           <KameleQuestionnaire />
         </div>
       </div>
-      <div className="padding-side padding-top-large">
+      <div className="padding-side padding-top-large padding-bottom-large">
         <div className="padding-bottom-median">
           <div className="same-line gap padding-bottom-small">
             <p className="h2 only-line uppercase">05</p>
@@ -260,6 +266,20 @@ function ProjectKamele() {
             usuarios, se genera confianza y familiaridad, lo que puede aumentar
             la fidelidad y satisfacción del usuario.
           </p>
+        </div>
+        <div className="split-content space-between">
+          <div>
+            <p className="h3 padding-bottom-small">Colores</p>
+            <ColorsKamele />
+          </div>
+          <div>
+            <p className="h3 padding-bottom-small">Tipografía</p>
+            <TypoKamele />
+          </div>
+          <div>
+            <p className="h3 padding-bottom-small">Botones y checkbox</p>
+            <ButtonsKamele />
+          </div>
         </div>
       </div>
 

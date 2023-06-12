@@ -5,9 +5,9 @@ import Footer from "./components/footer/Footer";
 import "./scss/global.scss";
 
 import Landing from "./views/landing/Landing";
-import ProjectCookie from "./views/Project-cookie";
+import ProjectCookie from "./views/project-cookie/Project-cookie";
 import ProjectKamele from "./views/project-kamele/Project-kamele";
-import ProjectAboutMe from "./views/Project-about-me";
+import ProjectAboutMe from "./views/project-about-me/Project-about-me";
 
 function ScrollToTopOnNavigation() {
   const { pathname } = useLocation();
