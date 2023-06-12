@@ -26,6 +26,10 @@
   padding-bottom: 50px;
 }
 
+.padding-bottom-mini {
+  padding-bottom: 25px;
+}
+
 .paragraph-spacing {
   display: flex;
   flex-direction: column;
@@ -77,9 +81,14 @@
   margin-top: -25em;
 }
 
-.header__subtitle-container {
+.header__subtitle-container-kamele {
   padding: 0 4em;
   margin-top: -1em;
+  text-align: center;
+}
+
+.header__subtitle-container-cookie {
+  padding: 0 4em;
   text-align: center;
 }
 

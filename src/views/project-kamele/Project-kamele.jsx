@@ -48,7 +48,7 @@ function ProjectKamele() {
             <span className="kammele__color--burgundy">e</span>
           </p>
         </div>
-        <h1 className="h4 header__subtitle-container">
+        <h1 className="h4 header__subtitle-container-kamele">
           La app que monitoriza la calidad de vida en pacientes que empiezan un
           tratamiento oncológico.
         </h1>
@@ -87,7 +87,10 @@ function ProjectKamele() {
             </div>
           </div>
           <div className="content large">
-            <img src="images/kamele/2-pantallas-kamele.png" alt="" />
+            <img
+              src="images/kamele/2-pantallas-kamele.png"
+              alt="Imagen con un móvil tumbado y otro de pie donde se ven diferentes secciones de la app Kamele"
+            />
           </div>
         </div>
       </div>
@@ -253,7 +256,7 @@ function ProjectKamele() {
             <p className="h2 only-line uppercase">05</p>
             <h5>Guía de estilos</h5>
           </div>
-          <p>
+          <p className="padding-bottom-mini">
             Una guía de estilos garantiza la coherencia visual y de comunicación
             en todos los aspectos de la marca, desde el logotipo hasta los
             colores, tipografías, estilos de imágenes y tono de voz. Esto ayuda
@@ -265,6 +268,18 @@ function ProjectKamele() {
             comunicación coherentes en todos los puntos de contacto con los
             usuarios, se genera confianza y familiaridad, lo que puede aumentar
             la fidelidad y satisfacción del usuario.
+          </p>
+
+          <p>
+            Por otro lado, es importante destacar que el contraste adecuado en
+            el texto de una página web o aplicación móvil es fundamental para
+            garantizar la accesibilidad y la buena experiencia de todos los
+            usuarios, independientemente de sus capacidades visuales. Por eso,
+            en este proyecto se han tenido en cuenta las pautas de accesibilidad
+            para el contenido web y se ha buscado un contraste entre el texto y
+            el fondo que asegure su legibilidad fácilmente, lo cual es esencial
+            para que los usuarios puedan leer y comprender el contenido sin
+            esfuerzo adicional.
           </p>
         </div>
         <div className="split-content space-between">
