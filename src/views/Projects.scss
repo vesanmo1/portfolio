@@ -44,6 +44,7 @@
 //PREVIOUS AND NEXT BUTTONS  ========================================
 
 .btn__color-cookie {
+  flex: 1;
   background-color: var(--color-project-cookie);
   &:hover,
   &:focus {
@@ -51,6 +52,7 @@
   }
 }
 .btn__color-kamele {
+  flex: 1;
   background-color: var(--color-project-kamele);
   &:hover,
   &:focus {
@@ -58,6 +60,7 @@
   }
 }
 .btn__color-about-me {
+  flex: 1;
   background-color: var(--color-project-about-me);
   &:hover,
   &:focus {
