@@ -1,4 +1,4 @@
-import "./Project-kamele.scss";
+import "../Projects.scss";
 import NextProject from "../../components/buttons/Next-project";
 import PreviousProject from "../../components/buttons/Previous-project";
 import { AccordionProjects } from "../../components/accordion/Accordion-projects";
@@ -21,9 +21,9 @@ import KameleQuestionnaire from "../../components/wireframes-kamele/Kamele-quest
 import KameleToday from "../../components/wireframes-kamele/Kamele-today";
 
 //STYLEGUIDE==================================================
-import ColorsKamele from "../../components/accordion/Styleguide-kamele/Colors-kamele";
-import TypoKamele from "../../components/accordion/Styleguide-kamele/Typo-kamele";
-import ButtonsKamele from "../../components/accordion/Styleguide-kamele/Buttons-kamele";
+import ColorsKamele from "../../components/Styleguide-kamele/Colors-kamele";
+import TypoKamele from "../../components/Styleguide-kamele/Typo-kamele";
+import ButtonsKamele from "../../components/Styleguide-kamele/Buttons-kamele";
 
 function ProjectKamele() {
   let projectTitle;

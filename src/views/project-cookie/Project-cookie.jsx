@@ -1,3 +1,4 @@
+import "../Projects.scss";
 import NextProject from "../../components/buttons/Next-project";
 import PreviousProject from "../../components/buttons/Previous-project";
 import TheCookieJarLogo from "../../the-cookie-jar-logo/The-cookie-Jar-logo";
@@ -9,6 +10,19 @@ import Magnify from "../../components/icons/Magnify";
 import Sitemap from "../../components/icons/Sitemap";
 import Brush from "../../components/icons/Brush";
 import Code from "../../components/icons/Code";
+import VisualStudio from "../../components/icons/Visual-studio-code";
+import Wordpress from "../../components/icons/Wordpress";
+import Figma from "../../components/icons/Figma";
+
+//WIREFRAMES=================================================
+import FlavorsCookie from "../../components/wireframes-cookie/Flavors-cookie";
+import HomepageCookie from "../../components/wireframes-cookie/Homepage-cookie";
+import SingularFlavorCookie from "../../components/wireframes-cookie/Singular-flavor-cookie";
+
+//STYLEGUIDE=================================================
+import ColorsCookie from "../../components/Styleguide-cookie/Colors-cookie";
+import ButtonsCookie from "../../components/Styleguide-cookie/Buttons-cookie";
+import TypoCookie from "../../components/Styleguide-cookie/Typo-cookie";
 
 function ProjectCookie() {
   return (
@@ -82,7 +96,7 @@ function ProjectCookie() {
             <div className="content large align-center">
               <img
                 src="images/cookie/1-pantalla-cookie.png"
-                alt="Imagen con un móvil tumbado y otro de pie donde se ven diferentes secciones de la app Kamele"
+                alt="Imagen con un móvil tumbado donde se ve parte de la home de la web de la que hablamos."
               />
             </div>
           </div>
@@ -206,16 +220,155 @@ function ProjectCookie() {
             <img
               className="max-height900"
               src="images/cookie/User-flow.png"
-              alt="Conjunto de dispositivos móviles flotando con diferentes partes de la web de The Cookie Jar"
+              alt="User flow de The Cookie Jar"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="padding-side padding-top-large">
+        <div>
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">05</p>
+            <h5>Wireframes</h5>
+          </div>
+          <div>
+            <p className="padding-bottom-mini">
+              Realizar primero los wireframes ha proporcionado una
+              representación visual de la estructura y el flujo de la página web
+              y ha ayudado a definir la disposición de los elementos, como el
+              encabezado, el menú de navegación, los bloques de contenido y los
+              pies de página. Esto permite tener una visión clara de cómo se
+              organizará la información y cómo los usuarios interactuarán con la
+              página.
+            </p>
+            <p className="padding-bottom-median">
+              Por tanto, los wireframes nos permiten centrarnos en la usabilidad
+              y en la experiencia del usuario. Al definir la disposición y la
+              jerarquía de los elementos, se puede tener en cuenta la facilidad
+              de uso, la accesibilidad y la navegación intuitiva. Esto ayuda a
+              garantizar que el diseño final de la página web sea intuitivo y
+              satisfactorio para los visitantes.
+            </p>
+          </div>
+          <div className="same-line gap padding-bottom-mini">
+            <HomepageCookie />
+            <FlavorsCookie />
+            <SingularFlavorCookie />
           </div>
         </div>
       </div>
       <div className="padding-side padding-top-large">
         <div>
           <div className="same-line gap padding-bottom-small">
-            <p className="h2 only-line uppercase">05</p>
-            <h5>Wireframes</h5>
+            <p className="h2 only-line uppercase">06</p>
+            <h5>Guía de estilos</h5>
+          </div>
+        </div>
+        <div>
+          <p className="padding-bottom-median">
+            Es importante hacer una guía de estilos para el proyecto The Cookie
+            Jar, especialmente debido a la naturaleza colorida de la web y la
+            necesidad de asegurar que los colores se combinen de manera
+            específica para cumplir con las pautas de accesibilidad al contenido
+            web. Todas las combinaciones de colores cumplen con el contraste
+            mínimo establecido. Por otro lado, el blanco se utiliza únicamente
+            en textos junto a un fondo de color oscuro (con todos cumple con el
+            contraste mínimo) y el color negro se usa en textos con un fondo de
+            color claro, que también cumplen todos el contraste.
+          </p>
+        </div>
+        <div className="split-content space-between">
+          <div>
+            <p className="h3 padding-bottom-small">Colores</p>
+            <ColorsCookie />
+          </div>
+          <div>
+            <p className="h3 padding-bottom-small">Botones</p>
+            <ButtonsCookie />
+            <p className="h3 padding-bottom-small padding-top-small">
+              Tipografía
+            </p>
+            <TypoCookie />
+          </div>
+        </div>
+      </div>
+      <div className="padding-side padding-top-large same-line gap">
+        <div>
+          <img
+            src="images/cookie/Flavors-cookie.png"
+            alt="Laptop con la página de sabores de The Cookie Jar"
+          />
+        </div>
+        <div>
+          <img
+            src="images/cookie/Singular-flavor-cookie.png"
+            alt="Laptop con la página del sabor taro de las cookies de The Cookie Jar"
+          />
+        </div>
+      </div>
+      <div className="padding-side padding-top-large padding-bottom-large">
+        <div className="split-content space-between align-start">
+          <div className="content large">
+            <div className="same-line gap padding-bottom-small">
+              <p className="h2 only-line uppercase">07</p>
+              <h5>Programación en Wordpress</h5>
+            </div>
+            <div>
+              <p className="padding-bottom-small">
+                En el desarrollo de la página web de The Cookie Jar, utilicé
+                WordPress dado que consideré que era la mejor opción para este
+                proyecto. Gracias a su interfaz amigable, el cliente puede
+                actualizar fácilmente el contenido sin soporte. Además, esta
+                herramienta facilita la incorporación de funcionalidades
+                futuras, como un blog. Por otra parte, el uso de una plantilla
+                personalizada mediante full site editing y el uso de CSS con
+                Visual Studio Code me permitieron adaptar el diseño y agregar
+                estilos personalizados, superando las limitaciones de WordPress
+                sin código.
+              </p>
+              <p className="padding-bottom-small">
+                Durante la fase de programación, se priorizó el enfoque mobile
+                first, lo que aseguró que el diseño de la página web se adaptara
+                perfectamente a todos los dispositivos. Al adoptar este enfoque,
+                se garantizó que la experiencia del usuario fuera óptima en
+                dispositivos móviles, como smartphones y tablets, que son cada
+                vez más utilizados para acceder a contenido en línea. La web
+                resultante es responsive, lo que significa que se ajusta
+                automáticamente al tamaño de pantalla, proporcionando una
+                navegación fluida y una visualización adecuada sin importar el
+                dispositivo utilizado.
+              </p>
+              <p className="h3 padding-bottom-small">Herramientas</p>
+              <ul>
+                <li>
+                  <div className="mail__container same-line gap">
+                    <Wordpress />
+                    <p className="h6">Wordpress</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="mail__container same-line gap">
+                    <VisualStudio />
+                    <p className="h6">Visual Studio Code</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="mail__container same-line gap">
+                    <Figma />
+                    <p className="h6">Figma (estrategia y diseño)</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="content small">
+            <div>
+              <img
+                src="images/cookie/Singular-flavor-mobile.png"
+                alt="Laptop con la página de sabores de The Cookie Jar"
+              />
+            </div>
           </div>
         </div>
       </div>
