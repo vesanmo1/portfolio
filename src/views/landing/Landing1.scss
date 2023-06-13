@@ -1,0 +1,35 @@
+// PROJECTS CARDS ====================================================
+
+.cards__container {
+  display: flex;
+  flex-basis: 0;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 36px;
+}
+
+.card {
+  flex-grow: 1;
+  padding: 3rem 3rem;
+  border: 3px solid var(--color-dark-100);
+  border-radius: 24px;
+  &.color-cookie {
+    background-color: var(--color-project-cookie);
+  }
+  &.color-kamele {
+    background-color: var(--color-project-kamele);
+  }
+  &.color-about-me {
+    background-color: var(--color-project-about-me);
+  }
+}
+
+.claim-container {
+  padding: 24px;
+  border: 2px dashed var(--color-dark-100);
+}
+.claim {
+  background-color: var(--color-primary);
+  padding: 24px 12px;
+  text-align: center;
+}

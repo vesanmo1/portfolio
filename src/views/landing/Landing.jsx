@@ -1,10 +1,16 @@
-import "./Landing.scss";
+import "./Landing1.scss";
+
 import HeaderIllustration from "./header-illustration/Header-illustration";
 import ViewMore from "../../components/buttons/View-more";
 import { data } from "./data-what-i-do/data";
 import { Accordion } from "../../components/accordion/Accordion";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+
+//IMAGES==========================================================================
+import landingKamele from "../../../images/landing/kamele-landing.png";
+import landingCookie from "../../../images/landing/cookie-landing.png";
+import landingAboutMe from "../../../images/landing/about-me-landing.png";
 
 function Landing() {
   const p = useLocation();
@@ -84,7 +90,7 @@ function Landing() {
             <ViewMore to={"/Project-cookie"} />
             <div className="card__image-container">
               <img
-                src="images/landing/cookie-landing.png"
+                src={landingCookie}
                 alt="Imagen de un teléfono móvil flotando junto a unas galletas. En la pantalla del móvil se puede ver el logotipo de la marca de la que se explica el proceso de diseño."
               />
             </div>
@@ -98,7 +104,7 @@ function Landing() {
             <ViewMore to={"/Project-kamele"} />
             <div className="card__image-container">
               <img
-                src="images/landing/kamele-landing.png"
+                src={landingKamele}
                 alt="Imagen de dos teléfonos móviles. En las pantallas de los teléfonos se puede ver parte del diseño de la aplicación Kamele."
               />
             </div>
