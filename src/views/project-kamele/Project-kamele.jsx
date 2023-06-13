@@ -69,23 +69,23 @@ function ProjectKamele() {
             </div>
             <div>
               <ol>
-                <li>
+                <li className="padding-bottom-mini">
                   1. Diseñar una interfaz que permita a los pacientes&nbsp;
                   <strong>
                     monitorizar sus actividades y calidad de vida.
                   </strong>
                 </li>
-                <li>
+                <li className="padding-bottom-mini">
                   2. Obtener un registro o&nbsp;<strong>historial</strong>
                   &nbsp;con el que los médicos puedan obtener&nbsp;
                   <strong>patrones de conducta del usuario</strong>
                   &nbsp;y relacionarlos con indicadores de calidad de vida.
                 </li>
-                <li>
+                <li className="padding-bottom-mini">
                   3. Crear un&nbsp;<strong>diseño intuitivo y fácil</strong>
                   &nbsp;diseño intuitivo y fácil de usar.
                 </li>
-                <li>
+                <li className="padding-bottom-mini">
                   4. Crear una&nbsp;<strong>interfaz atractiva</strong>
                   &nbsp;que se aleje de los típicos diseño de interfaces de
                   hospital.

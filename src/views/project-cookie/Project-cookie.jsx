@@ -86,13 +86,20 @@ function ProjectCookie() {
                   </li>
                   <li>
                     <div className="mail__container same-line gap">
-                      <Brush />
+                      <div>
+                        <Brush />
+                      </div>
+
                       <p className="h6">
                         Diseño de experiencia de usuario y de interfaz
                       </p>
                     </div>
+                  </li>
+                  <li>
                     <div className="mail__container same-line gap">
-                      <Code />
+                      <div>
+                        <Code />
+                      </div>
                       <p className="h6">
                         Programación de la web en Wordpress con Full Site
                         Editing
