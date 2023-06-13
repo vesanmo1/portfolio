@@ -25,6 +25,13 @@ import ColorsKamele from "../../components/Styleguide-kamele/Colors-kamele";
 import TypoKamele from "../../components/Styleguide-kamele/Typo-kamele";
 import ButtonsKamele from "../../components/Styleguide-kamele/Buttons-kamele";
 
+//IMAGES======================================================
+import KameleHeader from "../../../images/kamele/kamele-header.png";
+import ScreenKamele2 from "../../../images/kamele/2-pantallas-kamele.png";
+import ScreenKamele3 from "../../../images/kamele/3-pantallas-kamele.png";
+import ScreenKamele5 from "../../../images/kamele/5-pantallas-kamele.png";
+import KameleNotification from "../../../images/kamele/notification-kamele.png";
+
 function ProjectKamele() {
   let projectTitle;
   let projectDescription;
@@ -34,7 +41,7 @@ function ProjectKamele() {
       <header className="header-projects border-bottom color-project-kamele padding-side">
         <div className="header__image-container">
           <img
-            src="images/kamele/kamele-header.png"
+            src={KameleHeader}
             alt="Imagen de una mano cogiendo un dispositivo móvil donde aparece el logotipo de kamele"
           />
         </div>
@@ -88,7 +95,7 @@ function ProjectKamele() {
           </div>
           <div className="content large">
             <img
-              src="images/kamele/2-pantallas-kamele.png"
+              src={ScreenKamele2}
               alt="Imagen con un móvil tumbado y otro de pie donde se ven diferentes secciones de la app Kamele"
             />
           </div>
@@ -128,7 +135,7 @@ function ProjectKamele() {
       </div>
       <div className="padding-side padding-top-large">
         <img
-          src="images/kamele/3-pantallas-kamele.png"
+          src={ScreenKamele3}
           alt="Imagen con 3 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación."
         />
       </div>
@@ -183,8 +190,8 @@ function ProjectKamele() {
           <div className="content align-center equal">
             <img
               className="max-height"
-              src="images/kamele/notification-kamele.png"
-              alt="Imagen con 2 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación"
+              src={KameleNotification}
+              alt="Imagen con 1 móvil con una notificación de Kamele"
             />
           </div>
           <div className="content equal">
@@ -221,7 +228,7 @@ function ProjectKamele() {
       </div>
       <div className="padding-side padding-top-large">
         <img
-          src="images/kamele/5-pantallas-kamele.png"
+          src={ScreenKamele5}
           alt="Imagen con 5 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación, en concreto los formularios y cuestionarios de la misma"
         />
       </div>
