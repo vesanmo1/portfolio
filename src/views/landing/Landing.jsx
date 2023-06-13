@@ -117,7 +117,7 @@ function Landing() {
             <ViewMore to={"/Project-about-me"} />
             <div className="card__image-container">
               <img
-                src="images/landing/about-me-landing.png"
+                src={landingAboutMe}
                 alt="Imagen de una tablet. En la pantalla de la tablet se puede ver el diseño de la web."
               />
             </div>
