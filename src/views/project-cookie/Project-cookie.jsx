@@ -24,6 +24,15 @@ import ColorsCookie from "../../components/Styleguide-cookie/Colors-cookie";
 import ButtonsCookie from "../../components/Styleguide-cookie/Buttons-cookie";
 import TypoCookie from "../../components/Styleguide-cookie/Typo-cookie";
 
+//IMAGES=====================================================
+import CookieHeader from "../../../images/cookie/cookie-header.png";
+import FlavorsCookiePic from "../../../images/cookie/Flavors-cookie.png";
+import SingularFlavorCookiePic from "../../../images/cookie/Singular-flavor-cookie.png";
+import SingularFlavorMobilePic from "../../../images/cookie/Singular-flavor-mobile.png";
+import UserFlow from "../../../images/cookie/User-flow.png";
+import GravityDevices from "../../../images/cookie/Gravity-Devices.png";
+import MobileLying from "../../../images/cookie/1-pantalla-cookie.png";
+
 function ProjectCookie() {
   return (
     <>
@@ -31,7 +40,7 @@ function ProjectCookie() {
         <div className="same-line">
           <div className="header__image-container">
             <img
-              src="images/cookie/cookie-header.png"
+              src={CookieHeader}
               alt="Imagen de una laptop donde se puede ver la página principal de la web de The cookie Jar"
             />
           </div>
@@ -95,7 +104,7 @@ function ProjectCookie() {
             </div>
             <div className="content large align-center">
               <img
-                src="images/cookie/1-pantalla-cookie.png"
+                src={MobileLying}
                 alt="Imagen con un móvil tumbado donde se ve parte de la home de la web de la que hablamos."
               />
             </div>
@@ -203,7 +212,7 @@ function ProjectCookie() {
             </div>
             <div className="content large">
               <img
-                src="images/cookie/Gravity-Devices.png"
+                src={GravityDevices}
                 alt="Conjunto de dispositivos móviles flotando con diferentes partes de la web de The Cookie Jar"
               />
             </div>
@@ -219,7 +228,7 @@ function ProjectCookie() {
           <div>
             <img
               className="max-height900"
-              src="images/cookie/User-flow.png"
+              src={UserFlow}
               alt="User flow de The Cookie Jar"
             />
           </div>
@@ -296,13 +305,13 @@ function ProjectCookie() {
       <div className="padding-side padding-top-large same-line gap">
         <div>
           <img
-            src="images/cookie/Flavors-cookie.png"
+            src={FlavorsCookiePic}
             alt="Laptop con la página de sabores de The Cookie Jar"
           />
         </div>
         <div>
           <img
-            src="images/cookie/Singular-flavor-cookie.png"
+            src={SingularFlavorCookiePic}
             alt="Laptop con la página del sabor taro de las cookies de The Cookie Jar"
           />
         </div>
@@ -365,7 +374,7 @@ function ProjectCookie() {
           <div className="content small">
             <div>
               <img
-                src="images/cookie/Singular-flavor-mobile.png"
+                src={SingularFlavorMobilePic}
                 alt="Laptop con la página de sabores de The Cookie Jar"
               />
             </div>
