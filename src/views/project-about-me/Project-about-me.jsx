@@ -5,6 +5,8 @@ import PreviousProject from "../../components/buttons/Previous-project";
 import Code from "../../components/icons/Code";
 import Sitemap from "../../components/icons/Sitemap";
 import Brush from "../../components/icons/Brush";
+import VisualStudio from "../../components/icons/Visual-studio-code";
+import Figma from "../../components/icons/Figma";
 
 //IMAGES===================================================================
 import HeaderAboutMe from "../../../images/about-me/header-about-me.png";
@@ -107,10 +109,10 @@ function ProjectAboutMe() {
           alt="Imagen con 3 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación."
         />
       </div>
-      <div className="padding-side padding-top-large padding-bottom-large">
+      <div className="padding-side padding-top-large">
         <div className="padding-bottom-median">
           <div className="same-line gap padding-bottom-small">
-            <p className="h2 only-line uppercase">05</p>
+            <p className="h2 only-line uppercase">03</p>
             <h5>Guía de estilos</h5>
           </div>
           <p className="padding-bottom-mini">
@@ -152,6 +154,56 @@ function ProjectAboutMe() {
             <p className="h3 padding-bottom-small">Botones y checkbox</p>
             <ButtonsAbout />
           </div>
+        </div>
+      </div>
+      <div className="padding-side padding-top-large padding-bottom-large">
+        <div>
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">03</p>
+            <h5>Programación en Visual Estudio Code</h5>
+          </div>
+          <p className="padding-bottom-small">
+            En este proyecto me enfrenté al desafío de familiarizarme con nuevas
+            herramientas que hasta ese momento desconocía por completo: Visual
+            Studio Code y Figma. Mi objetivo era crear una página web one-page,
+            responsive y accesible. A medida que exploraba estas herramientas,
+            descubrí su potencial y flexibilidad para el diseño y desarrollo
+            web. Aprendí a utilizar Visual Studio Code y fui mejorando en la
+            creación de código limpio y eficiente. Mientras, Figma me permitió
+            crear diseños visualmente atractivos y adaptativos con auto layout y
+            marcar ya elementos como los margin, padding... que iba a tener mi
+            web cuando la programase. A través de este proyecto, logré superar
+            el reto de aprender nuevas habilidades y crear una web que cumpliera
+            con los estándares de accesibilidad y respuesta a diferentes
+            dispositivos.
+          </p>
+
+          <p className="h3 padding-bottom-small">Herramientas</p>
+          <ul>
+            <li>
+              <div className="mail__container same-line gap">
+                <VisualStudio />
+                <p className="h6">Visual Studio Code</p>
+              </div>
+            </li>
+            <li>
+              <div className="mail__container same-line gap padding-bottom-small">
+                <Figma />
+                <p className="h6">Figma (estrategia y diseño)</p>
+              </div>
+            </li>
+          </ul>
+          <p className="h3 padding-bottom-small">Link a Github</p>
+          <p className="h6">
+            Visita mi web haciendo clic{" "}
+            <a
+              className="h6"
+              href="https://github.com/vesanmo1/About-me"
+              target="_blank"
+            >
+              aquí
+            </a>
+          </p>
         </div>
       </div>
       <div className="btn__previous-next">
