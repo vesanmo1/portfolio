@@ -264,29 +264,26 @@ function ProjectKamele() {
             <h5>Guía de estilos</h5>
           </div>
           <p className="padding-bottom-mini">
-            Una guía de estilos garantiza la coherencia visual y de comunicación
-            en todos los aspectos de la marca, desde el logotipo hasta los
-            colores, tipografías, estilos de imágenes y tono de voz. Esto ayuda
-            a establecer una identidad de marca sólida y reconocible. Además,
-            ahorra tiempo y recursos, ya que se evita la necesidad de tomar
-            decisiones repetitivas o reinventar constantemente la apariencia y
-            el tono de la marca. Por otro lado, también mejora la experiencia
-            del usuario, dado que al mantener elementos visuales y de
-            comunicación coherentes en todos los puntos de contacto con los
-            usuarios, se genera confianza y familiaridad, lo que puede aumentar
-            la fidelidad y satisfacción del usuario.
+            Con esta guía de estilos se garantiza que el diseño visual de la
+            aplicación se mantenga consistente en todas sus pantallas y
+            elementos. Esto incluye aspectos como la tipografía, los colores,
+            los iconos y la disposición de los elementos. La consistencia visual
+            crea una experiencia coherente para los usuarios, lo que facilita la
+            comprensión y la navegación de la aplicación. De esta forma, los
+            usuarios se familiarizan rápidamente con la forma de interactuar con
+            la aplicación, lo que mejora la experiencia de usuario y reduce la
+            curva de aprendizaje.
           </p>
 
           <p>
-            Por otro lado, es importante destacar que el contraste adecuado en
-            el texto de una página web o aplicación móvil es fundamental para
-            garantizar la accesibilidad y la buena experiencia de todos los
-            usuarios, independientemente de sus capacidades visuales. Por eso,
-            en este proyecto se han tenido en cuenta las pautas de accesibilidad
-            para el contenido web y se ha buscado un contraste entre el texto y
-            el fondo que asegure su legibilidad fácilmente, lo cual es esencial
-            para que los usuarios puedan leer y comprender el contenido sin
-            esfuerzo adicional.
+            Además, al tener una guía de estilos, el proceso de diseño se
+            agiliza y permite que sea flexible y escalable, ya que no tienen que
+            tomar decisiones sobre aspectos visuales y de diseño en cada
+            pantalla o elemento nuevo y a medida que la aplicación crece y se
+            agregan nuevas funcionalidades, la guía de estilos proporciona una
+            base sólida que facilita la integración de nuevos elementos. Del
+            mismo modo, la guía de estilos también desempeña un papel crucial en
+            la creación y el mantenimiento de la identidad de marca.
           </p>
         </div>
         <div className="split-content space-between">
@@ -305,8 +302,8 @@ function ProjectKamele() {
         </div>
       </div>
 
-      <div className="same-line">
-        <div className="btn__previous-next btn__color-cookie">
+      <div className="btn__previous-next">
+        <div className="btn__color-cookie">
           <PreviousProject
             to={"/Project-cookie"}
             projectTitle={"The cookie Jar"}
@@ -315,7 +312,7 @@ function ProjectKamele() {
             }
           />
         </div>
-        <div className="btn__previous-next btn__color-about-me">
+        <div className="btn__color-about-me">
           <NextProject
             to={"/Project-about-me"}
             projectTitle={"About me"}

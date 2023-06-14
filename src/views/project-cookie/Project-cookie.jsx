@@ -388,8 +388,8 @@ function ProjectCookie() {
           </div>
         </div>
       </div>
-      <div className="same-line">
-        <div className="btn__previous-next btn__color-about-me">
+      <div className="btn__previous-next">
+        <div className="btn__color-about-me">
           <PreviousProject
             to={"/Project-about-me"}
             projectTitle={"About me"}
@@ -398,7 +398,7 @@ function ProjectCookie() {
             }
           />
         </div>
-        <div className="btn__previous-next btn__color-kamele">
+        <div className="btn__color-kamele">
           <NextProject
             to={"/Project-kamele"}
             projectTitle={"Kamele"}

@@ -9,6 +9,12 @@ import Brush from "../../components/icons/Brush";
 //IMAGES===================================================================
 import HeaderAboutMe from "../../../images/about-me/header-about-me.png";
 import MacAboutMe from "../../../images/about-me/mac-about-me.png";
+import DevicesAboutMe from "../../../images/about-me/devices-about-me.png";
+
+//STYLEGUIDE===============================================================
+import ColorsAbout from "../../StyleguideAboutMe/Colors-about";
+import TypoAbout from "../../StyleguideAboutMe/Typo-about";
+import ButtonsAbout from "../../StyleguideAboutMe/Buttons-about";
 
 function ProjectAboutMe() {
   return (
@@ -95,8 +101,61 @@ function ProjectAboutMe() {
           </div>
         </div>
       </div>
-      <div className="same-line">
-        <div className="btn__previous-next btn__color-kamele">
+      <div className="padding-side padding-top-large">
+        <img
+          src={DevicesAboutMe}
+          alt="Imagen con 3 smartphones en cuyas pantallas se pueden ver diferentes secciones del diseño de la aplicación."
+        />
+      </div>
+      <div className="padding-side padding-top-large padding-bottom-large">
+        <div className="padding-bottom-median">
+          <div className="same-line gap padding-bottom-small">
+            <p className="h2 only-line uppercase">05</p>
+            <h5>Guía de estilos</h5>
+          </div>
+          <p className="padding-bottom-mini">
+            Una guía de estilos garantiza la coherencia visual y de comunicación
+            en todos los aspectos de la marca, desde el logotipo hasta los
+            colores, tipografías, estilos de imágenes y tono de voz. Esto ayuda
+            a establecer una identidad de marca sólida y reconocible. Además,
+            ahorra tiempo y recursos, ya que se evita la necesidad de tomar
+            decisiones repetitivas o reinventar constantemente la apariencia y
+            el tono de la marca. Por otro lado, también mejora la experiencia
+            del usuario, dado que al mantener elementos visuales y de
+            comunicación coherentes en todos los puntos de contacto con los
+            usuarios, se genera confianza y familiaridad, lo que puede aumentar
+            la fidelidad y satisfacción del usuario.
+          </p>
+
+          <p>
+            Por otro lado, es importante destacar que el contraste adecuado en
+            el texto de una página web o aplicación móvil es fundamental para
+            garantizar la accesibilidad y la buena experiencia de todos los
+            usuarios, independientemente de sus capacidades visuales. Por eso,
+            en este proyecto se han tenido en cuenta las pautas de accesibilidad
+            para el contenido web y se ha buscado un contraste entre el texto y
+            el fondo que asegure su legibilidad fácilmente, lo cual es esencial
+            para que los usuarios puedan leer y comprender el contenido sin
+            esfuerzo adicional.
+          </p>
+        </div>
+        <div className="split-content space-between">
+          <div>
+            <p className="h3 padding-bottom-small">Colores</p>
+            <ColorsAbout />
+          </div>
+          <div>
+            <p className="h3 padding-bottom-small">Tipografía</p>
+            <TypoAbout />
+          </div>
+          <div>
+            <p className="h3 padding-bottom-small">Botones y checkbox</p>
+            <ButtonsAbout />
+          </div>
+        </div>
+      </div>
+      <div className="btn__previous-next">
+        <div className=" btn__color-kamele">
           <PreviousProject
             to={"/Project-kamele"}
             projectTitle={"Kamele"}
@@ -105,7 +164,7 @@ function ProjectAboutMe() {
             }
           />
         </div>
-        <div className="btn__previous-next btn__color-cookie">
+        <div className=" btn__color-cookie">
           <NextProject
             to={"/Project-cookie"}
             projectTitle={"The Cookie Jar"}

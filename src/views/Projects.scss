@@ -64,7 +64,8 @@
 //PREVIOUS AND NEXT BUTTONS  ========================================
 
 .btn__previous-next {
-  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .btn__color-cookie {
