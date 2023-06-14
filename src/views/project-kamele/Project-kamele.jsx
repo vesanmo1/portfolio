@@ -306,7 +306,7 @@ function ProjectKamele() {
       </div>
 
       <div className="same-line">
-        <div className="btn__color-cookie">
+        <div className="btn__previous-next btn__color-cookie">
           <PreviousProject
             to={"/Project-cookie"}
             projectTitle={"The cookie Jar"}
@@ -315,7 +315,7 @@ function ProjectKamele() {
             }
           />
         </div>
-        <div className="btn__color-about-me">
+        <div className="btn__previous-next btn__color-about-me">
           <NextProject
             to={"/Project-about-me"}
             projectTitle={"About me"}

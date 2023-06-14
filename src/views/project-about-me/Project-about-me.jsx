@@ -8,6 +8,7 @@ import Brush from "../../components/icons/Brush";
 
 //IMAGES===================================================================
 import HeaderAboutMe from "../../../images/about-me/header-about-me.png";
+import MacAboutMe from "../../../images/about-me/mac-about-me.png";
 
 function ProjectAboutMe() {
   return (
@@ -57,7 +58,10 @@ function ProjectAboutMe() {
             </div>
           </div>
           <div className="content large">
-            <p>pic</p>
+            <img
+              src={MacAboutMe}
+              alt="Imagen de un Mac con parte de la one page del about me"
+            />
           </div>
         </div>
       </div>
@@ -92,7 +96,7 @@ function ProjectAboutMe() {
         </div>
       </div>
       <div className="same-line">
-        <div className="btn__color-kamele">
+        <div className="btn__previous-next btn__color-kamele">
           <PreviousProject
             to={"/Project-kamele"}
             projectTitle={"Kamele"}
@@ -101,7 +105,7 @@ function ProjectAboutMe() {
             }
           />
         </div>
-        <div className="btn__color-cookie">
+        <div className="btn__previous-next btn__color-cookie">
           <NextProject
             to={"/Project-cookie"}
             projectTitle={"The Cookie Jar"}

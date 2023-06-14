@@ -63,6 +63,10 @@
 
 //PREVIOUS AND NEXT BUTTONS  ========================================
 
+.btn__previous-next {
+  height: 100%;
+}
+
 .btn__color-cookie {
   flex: 1;
   background-color: var(--color-project-cookie);
